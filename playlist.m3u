@@ -1,178 +1,82 @@
 #EXTM3U
-# 🇷🇺 РОССИЯ + 🇲🇩 МОЛДОВА + 🎬 ФИЛЬМЫ + 📺 СЕРИАЛЫ
-# 📅 Обновлено: 26.08.2026 10:42:42
-# 📊 Всего: 79
+# 🇷🇺 РОССИЯ + 🇲🇩 МОЛДОВА + ВОССТАНОВЛЕННЫЕ КАНАЛЫ
+# 📅 Обновлено: 26.08.2026 10:51:23
+# 📊 Всего: 26
 
 # ==========================================
-#  📁 🇷🇺 РОССИЯ (48)
+#  📁 🇷🇺 РОССИЯ (7)
 # ==========================================
 
-#EXTINF:-1 tvg-id="Friday.ru@SD",Пятница
-http://stream.mcquack.net/181/index.m3u8
-#EXTINF:-1 tvg-id="KVNTV.ru@SD",НТВ
-http://178.124.179.122:8080/KVN-TV/index.m3u8
-#EXTINF:-1 tvg-id="NTV.ru@SD",НТВ
-https://stream8.cinerama.uz/1023/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="NTV.ru@HD",НТВ
-https://bl.rutube.ru/livestream/c37cd74192c6bc3d6cd6077c0c4fd686/index.m3u8?e=2077050299&s=HSWg81JrQ3OqmwuWkEIDAQ&scheme=https
-#EXTINF:-1 tvg-id="NTV.ru@HD",НТВ
-https://cdn-dvr.ntv.ru/ntv0_hd/index.m3u8
-#EXTINF:-1 tvg-id="NTVLaw.ru@SD",НТВ
-http://hls127.freeott.top:8080/NTV_PRAVO_TV/video.m3u8
-#EXTINF:-1 tvg-id="NTVMir.ru@SD",НТВ
-http://5.188.159.128:8070/ntvmir_TV/index.m3u8
-#EXTINF:-1 tvg-id="NTV.ru@SD",НТВ
-http://45.153.24.78/NTV/index.m3u8
-#EXTINF:-1 tvg-id="NTV.ru@SD",НТВ
-https://cdn.ntv.ru/ntv-spb/index.m3u8
-#EXTINF:-1 tvg-id="NTVStyle.ru@SD",НТВ
-http://hls127.freeott.top:8080/NTV_STIL_TV/video.m3u8
-#EXTINF:-1 tvg-id="NTVVitrina.ru@SD",НТВ
-https://cdn.ntv.ru/vitrina/index.m3u8
-#EXTINF:-1 tvg-id="OceanTV.ru@SD",НТВ
-http://hls127.freeott.top:8080/Ocean_TV/video.m3u8
-#EXTINF:-1 tvg-id="Ostrosyuzhetnoye.ru@HD",Ю
-http://stream.mcquack.net/214/index.m3u8
-#EXTINF:-1 tvg-id="Priklyucheniya.ru@HD",Ю
-http://stream.mcquack.net/198/index.m3u8
-#EXTINF:-1 tvg-id="ProLyubov.ru@SD",Ю
-http://hls127.freeott.top:8080/ProLubovHD/video.m3u8
-#EXTINF:-1 tvg-id="RENTV.ru@SD",НТВ
-http://31.148.48.15/REN-TV/index.m3u8
-#EXTINF:-1 tvg-id="RusskiyBestseller.ru@SD",СТС
-http://stream.mcquack.net/208/index.m3u8
-#EXTINF:-1 tvg-id="ShansonTV.ru@SD",НТВ
-https://streaming.thestream.cyou/live/7009.m3u8
-#EXTINF:-1 tvg-id="ShansonTV.ru@SD",НТВ
-http://catchup.videoline.ru/shanson/index.m3u8
-#EXTINF:-1 tvg-id="ShansonTV.ru@SD",НТВ
-http://hls127.freeott.top:8080/Shanson_Tv/video.m3u8
-#EXTINF:-1 tvg-id="Shokiruyushchee.ru@HD",Ю
-http://stream.mcquack.net/75/index.m3u8
-#EXTINF:-1 tvg-id="Smotrim100Lyubov.ru@SD",Ю
-https://stream.smotrim.ru/hls/fasttv01/playlist_2.m3u8
-#EXTINF:-1 tvg-id="Soyuzny.ru@SD",Ю
-http://178.124.179.122:8080/TRO/index.m3u8
-#EXTINF:-1 tvg-id="Spas.ru@SD",Спас
-http://hls127.freeott.top:8080/Spas/video.m3u8
-#EXTINF:-1 tvg-id="Spas.ru@SD",Спас
-https://tvspas.mediacdn.ru/cdn/spas/playlist.m3u8
-#EXTINF:-1 tvg-id="STS.ru@SD",СТС
-http://tshift-1.telecoma.tv/sts/index.m3u8
-#EXTINF:-1 tvg-id="STS.ru@HD",СТС
-http://stream.mcquack.net/138/index.m3u8
-#EXTINF:-1 tvg-id="STSInternational.ru@SD",СТС
-http://178.134.1.158:8081/CTC/index.m3u8
-#EXTINF:-1 tvg-id="STSkids.ru@SD",СТС
-http://hls127.freeott.top:8080/STS_Kids/video.m3u8
-#EXTINF:-1 tvg-id="STSkids.ru@SD",СТС
-http://stream.mcquack.net/197/index.m3u8
-#EXTINF:-1 tvg-id="STSLove.ru@SD",СТС
-http://hls127.freeott.top:8080/CTC-LOVE/video.m3u8
-#EXTINF:-1 tvg-id="STSLove.ru@SD",СТС
-http://stream.mcquack.net/183/index.m3u8
-#EXTINF:-1 tvg-id="STS.ru@SD",СТС
-http://45.153.24.78/STS/index.m3u8
-#EXTINF:-1 tvg-id="TNT.ru@HD",ТНТ
-http://45.153.24.78/TNT/index.m3u8
-#EXTINF:-1 tvg-id="TNT.ru@SD",ТНТ
-http://stream.mcquack.net/135/index.m3u8
-#EXTINF:-1 tvg-id="Zvezda.ru@SD",Звезда
-http://51.158.144.33:2021/zvezda/index.m3u8
-#EXTINF:-1 tvg-id="Zvezda.ru@SD",Звезда
-https://stream8.cinerama.uz/1050/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="Zvezda.ru@HD",Звезда
-https://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist.m3u8
-#EXTINF:-1 tvg-id="MuzSoyuz.ru@SD",МУЗ ТВ
+#EXTINF:-1 tvg-id="MuzSoyuz.ru@SD",Муз союз (576p)
 https://hls-tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/playlist.m3u8
-#EXTINF:-1 tvg-id="Friday.ru@SD",Пятница
+#EXTINF:-1 tvg-id="Friday.ru@SD",Пятница! (576p)
 https://vod.tuva.ru/friday/index.m3u8
-#EXTINF:-1 tvg-id="Russia24.ru@SD",Россия 24
+#EXTINF:-1 tvg-id="Russia24.ru@SD",Россия 24 (576p) [Not 24/7]
 https://uiptv.do.am/1ufc/000000006/playlist.m3u8
-#EXTINF:-1 tvg-id="Soyuz.ru@SD",Ю
+#EXTINF:-1 tvg-id="Soyuz.ru@SD",Союз (576p)
 https://hls-tvsoyuz.cdnvideo.ru/tvsoyuz/soyuz/playlist.m3u8
-#EXTINF:-1 tvg-id="TvoyeTVYumor.ru@SD",Ю
+#EXTINF:-1 tvg-id="TvoyeTVYumor.ru@SD",Твое ТВ Юмор (1080p)
 http://tvoetv.space:8080/tvoetv_humor/index.m3u8
 #EXTINF:-1 tvg-id="Telplus.ru@SD",Телплюс ТВ (Астрахань) (360p) [Not 24/7]
 https://streaming.astrakhan.ru/telplushd/playlist.m3u8
-#EXTINF:-1 tvg-id="ShansonTV.ru@SD",НТВ
-https://uiptv.do.am/1ufc/602079679/playlist.m3u8
-#EXTINF:-1 tvg-id="ShansonTV.ru@SD",НТВ
-http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="Yuvelirochka.ru@SD",Ю
+#EXTINF:-1 tvg-id="Yuvelirochka.ru@SD",Ювелирочка ТВ (576p)
 https://live-uvelirochka.cdnvideo.ru/uvelirochka/uvelirochka_720p3/playlist.m3u8
-#EXTINF:-1 tvg-id="RENTV.ru@SD",НТВ
-http://185.23.80.23:8080/REN/index.m3u8
 
 # ==========================================
-#  📁 🇲🇩 МОЛДОВА (28)
+#  📁 🇲🇩 МОЛДОВА (8)
 # ==========================================
 
-#EXTINF:-1 tvg-id="BaltiTV.md@SD",Bălţi TV (1080p) [Geo-blocked]
-http://77.89.199.174:8000/play/1024/index.m3u8
+#EXTINF:-1 tvg-id="KHLPrime.ru@SD",KHL Prime (1080p)
+http://stream.mcquack.net/178/index.m3u8
 #EXTINF:-1 tvg-id="BusuiocTV.md@SD",Busuioc TV
 https://tt.nfthost.net/static/streaming-playlists/hls/bb907ca9-5cb5-49dd-b276-d77721a9bc6d/master.m3u8
-#EXTINF:-1 tvg-id="ExclusivTV.md@SD",Exclusiv TV
-rtmp://89.28.25.122/live/tnt_md
-#EXTINF:-1 tvg-id="HitFM.md@SD",Hit FM
-https://hitfm.nfthost.net/hls/hitfm/live_all/playlist.m3u8
 #EXTINF:-1 tvg-id="Moldova1.md@SD",Moldova 1 (1080p)
 https://v0.trm.md/static/streaming-playlists/hls/9b79338b-1870-4cd7-91d4-0f6ce5cac7ca/master.m3u8
 #EXTINF:-1 tvg-id="Moldova2.md@SD",Moldova 2 (1080p)
 https://v0.trm.md/static/streaming-playlists/hls/d5fafab0-9c37-4746-9e7a-b2d6c0427015/master.m3u8
-#EXTINF:-1 tvg-id="MoldovaTV.md@SD",Moldova TV (1080p)
-https://moldovatv.ro/live-tv/live.m3u8
-#EXTINF:-1 tvg-id="MoldovaTV.md@SD",Moldova TV (576p) [Not 24/7]
-http://89.38.8.130:39435
 #EXTINF:-1 tvg-id="N4.md@SD",N4 (360p) [Not 24/7]
 https://web.sats.gstv.tech/cpl11/da8df281-1165-440a-8c86-959f71b695b6/N4web.m3u8
 #EXTINF:-1 tvg-id="NorocTV.md@SD",Noroc TV (576p) [Not 24/7]
 https://live.noroc.tv/noroc/noroc.m3u8
 #EXTINF:-1 tvg-id="NorocTV.md@SD",Noroc TV
 https://media.noroc.tv/noroc/bitrate_1080p.m3u8
-#EXTINF:-1 tvg-id="PrivescEuTV.md@SD",Privesc.Eu TV (2160p)
-https://cachestar.privesc.eu/liniar/moldova/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioMoldova.md@SD",Radio Moldova
-https://radiolive.trm.md/hls_rma/actualitati.m3u8
-#EXTINF:-1 tvg-id="RadioMoldovaMuzical.md@SD",Radio Moldova Muzical
-https://radiolive.trm.md:8001/hls_rmm/muzical.m3u8
-#EXTINF:-1 tvg-id="RadioMoldovaTineret.md@SD",Radio Moldova Tineret (1080p)
-https://radiolive.trm.md:8001/hls_rmt/tineret.m3u8
-#EXTINF:-1 tvg-id="RealitateaTV.md@SD",Rlive TV (406p)
-https://realitatealive.md/tv/rlive.m3u8
-#EXTINF:-1 tvg-id="SorTV.md@SD",Sor TV (720p)
-http://188.237.212.16:8888/live/cameraFeed.m3u8
-#EXTINF:-1 tvg-id="TezaurTV.md@SD",Tezaur TV (576i)
-https://tezaurtv.md/stream/index.m3u8
-#EXTINF:-1 tvg-id="TSV.md@SD",TSV (1080p)
-https://tsv.md/stream/hls/tsv-online/index.m3u8
 #EXTINF:-1 tvg-id="TV8.md@SD",TV8 [Not 24/7]
 http://315e5a5d.ottrast.com/iptv/8KSD5KFDXA6H88/2454/index.m3u8
-#EXTINF:-1 tvg-id="TVRMoldova.md@SD",TVR Moldova (720p) [Geo-blocked] [Not 24/7]
-https://tvr-tvrmoldova.cdn.zitec.com/live/tvrmoldova/main.m3u8
-#EXTINF:-1 tvg-id="TVRMoldova.md@HD",TVR Moldova HD (1440p)
-https://tvr-moldova.lg.mncdn.com/tvrmoldova/smil:tvrmoldova.smil/chunklist.m3u8
-#EXTINF:-1 tvg-id="TVRMoldova.md@HD",TVR Moldova HD (1080p)
-https://tvr-moldova.lg.mncdn.com/tvrmoldova/smil:tvrmoldova.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="VoceaBasarabieiTV.md@SD",Vocea Basarabiei TV (720p) [Not 24/7]
-https://storage.voceabasarabiei.md/vocea/vocea.m3u8
-#EXTINF:-1 tvg-id="VoceaBasarabieiTV.md@SD",Vocea Basarabiei TV
-https://media.voceabasarabiei.md/vocea/bitrate_1080p.m3u8
-#EXTINF:-1 tvg-id="WeSportTV.md@SD",We Sport TV
-http://forever.megogo.xyz/iptv/QGB4M3H62GC7E3/2471/index.m3u8
-#EXTINF:-1 tvg-id="ZonaM.md@SD",Zona M
-http://forever.megogo.xyz/iptv/QGB4M3H62GC7E3/2470/index.m3u8
-#EXTINF:-1 tvg-id="StarTV.md@SD",Star TV
-http://forever.megogo.xyz/iptv/QGB4M3H62GC7E3/2465/index.m3u8
 
 # ==========================================
-#  📁 🎬 ФИЛЬМЫ (3)
+#  📁 🔄 ВОССТАНОВЛЕННЫЕ (Orange) (8)
 # ==========================================
 
-#EXTINF:-1 tvg-id="Domkino.ru@SD",Дом кино
-http://stream.mcquack.net/236/index.m3u8
-#EXTINF:-1 tvg-id="Domkino.ru@SD",Дом кино
-https://stream8.cinerama.uz/1054/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="DomkinoPremium.ru@HD",Дом кино
-http://stream.mcquack.net/108/index.m3u8
+#EXTINF:tvg-logo="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='300'><rect width='200' height='300' fill='#2ecc71'/><text x='100' y='150' font-family='Arial' font-size='18' fill='white' text-anchor='middle'>Da Vinci</text></svg>" -1 tvg-id="DaVinci.ru@SD",Da Vinci (576p)
+http://hls127.freeott.top:8080/Da_Vinci_Learning/video.m3u8
+#EXTINF:tvg-logo="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='300'><rect width='200' height='300' fill='#2ecc71'/><text x='100' y='150' font-family='Arial' font-size='18' fill='white' text-anchor='middle'>Da Vinci</text></svg>" -1 tvg-id="DaVinci.ru@SD",Da Vinci (576p)
+http://stream.mcquack.net/238/index.m3u8
+#EXTINF:tvg-logo="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='300'><rect width='200' height='300' fill='#3498db'/><text x='100' y='150' font-family='Arial' font-size='18' fill='white' text-anchor='middle'>Da Vinci</text></svg>" -1 tvg-id="DaVinci.ru@SD",Da Vinci
+https://stream8.cinerama.uz/1231/tracks-v1a1/mono.m3u8
+#EXTINF:tvg-logo="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='300'><rect width='200' height='300' fill='#9b59b6'/><text x='100' y='150' font-family='Arial' font-size='18' fill='white' text-anchor='middle'>MMA-TV.com</text></svg>" -1 tvg-id="MMATVcom.ru@SD",MMA-TV.com
+https://stream8.cinerama.uz/1226/tracks-v1a1/mono.m3u8
+#EXTINF:tvg-logo="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='300'><rect width='200' height='300' fill='#3498db'/><text x='100' y='150' font-family='Arial' font-size='18' fill='white' text-anchor='middle'>viju History</text></svg>" -1 tvg-id="vijuHistory.ru@SD",viju History (576p)
+http://178.124.179.122:8080/HistoryHD/index.m3u8
+#EXTINF:tvg-logo="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='300'><rect width='200' height='300' fill='#3498db'/><text x='100' y='150' font-family='Arial' font-size='18' fill='white' text-anchor='middle'>viju History</text></svg>" -1 tvg-id="vijuHistory.ru@SD",viju History (576p)
+http://stream.mcquack.net/101/index.m3u8
+#EXTINF:tvg-logo="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='300'><rect width='200' height='300' fill='#f39c12'/><text x='100' y='150' font-family='Arial' font-size='18' fill='white' text-anchor='middle'>viju+ Sport</text></svg>" -1 tvg-id="vijuPlusSport.ru@SD",viju+ Sport (576p)
+http://stream.mcquack.net/333/index.m3u8
+#EXTINF:tvg-logo="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='300'><rect width='200' height='300' fill='#9b59b6'/><text x='100' y='150' font-family='Arial' font-size='18' fill='white' text-anchor='middle'>viju+ Sport</text></svg>" -1 tvg-id="vijuPlusSport.ru@SD",viju+ Sport
+https://stream8.cinerama.uz/1229/tracks-v1a1/mono.m3u8
+
+# ==========================================
+#  📁 🎬 ФИЛЬМЫ (1)
+# ==========================================
+
+#EXTINF:tvg-logo="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='300'><rect width='200' height='300' fill='#e67e22'/><text x='100' y='150' font-family='Arial' font-size='18' fill='white' text-anchor='middle'>КИНОТВ</text></svg>" -1 tvg-id="KinoTV.ru@SD",КИНОТВ
+https://vod.tuva.ru/kinotv/index.m3u8
+
+# ==========================================
+#  📁 📺 СЕРИАЛЫ (2)
+# ==========================================
+
+#EXTINF:tvg-logo="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='300'><rect width='200' height='300' fill='#0652DD'/><text x='100' y='150' font-family='Arial' font-size='18' fill='white' text-anchor='middle'>NTV Series</text></svg>" -1 tvg-id="NTVSeries.ru@SD",NTV Series (576p)
+http://stream.mcquack.net/301/index.m3u8
+#EXTINF:tvg-logo="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='300'><rect width='200' height='300' fill='#3498db'/><text x='100' y='150' font-family='Arial' font-size='18' fill='white' text-anchor='middle'>viju+ Serial</text></svg>" -1 tvg-id="vijuPlusSerial.ru@HD",viju+ Serial HD (1080p)
+http://stream.mcquack.net/311/index.m3u8
 
