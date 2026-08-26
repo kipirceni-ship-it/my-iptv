@@ -1,0 +1,27 @@
+name: Build IPTV Playlist
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    - name: Install requests
+      run: pip install requests
+    - name: Build playlist
+      run: python iptv_builder.py
+    - name: Commit and push
+      run: |
+        git config user.name "GitHub Action"
+        git config user.email "action@github.com"
+        git add playlist.m3u stats.json
+        git diff --staged --quiet || git commit -m "Обновление $(date '+%Y-%m-%d %H:%M')"
+        git push
