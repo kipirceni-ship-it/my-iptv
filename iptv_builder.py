@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 📺 НОВАЯ СЕТКА - МОЛДОВА + РОССИЯ + ФИЛЬМЫ + СЕРИАЛЫ
-Убраны украинские и румынские каналы!
+С РАБОЧИМИ ИСТОЧНИКАМИ ФИЛЬМОВ!
 """
 
 import requests
@@ -9,6 +9,7 @@ import hashlib
 import os
 import re
 import time
+import json
 from datetime import datetime
 
 # ============================================
@@ -18,8 +19,8 @@ from datetime import datetime
 CONFIG = {
     'timeout': 15,
     'max_channels': 5000,
-    'max_movies': 2000,
-    'max_series': 1000,
+    'max_movies': 3000,
+    'max_series': 2000,
 }
 
 # ============================================
@@ -27,32 +28,25 @@ CONFIG = {
 # ============================================
 
 RUSSIAN_NAMES = {
-    # Молдова (ВСЕ!)
     'moldova1': 'Moldova 1 HD',
     'moldova2': 'Moldova 2 HD',
     'tvr moldova': 'TVR Moldova',
     'realitatea': 'Realitatea TV HD',
     'jurnal': 'Jurnal TV HD',
     'tv8': 'TV 8 HD',
-    'tv5 monde': 'TV5 Monde HD',
-    'pro tv chisinau': 'PRO TV Chisinau HD',
-    'one tv': 'One TV HD',
-    'star tv': 'Star TV HD',
-    'cinema1': 'Cinema 1 HD',
+    'tv9': 'TV9 HD',
+    'noroc': 'Noroc TV HD',
+    'pro tv': 'PRO TV Chisinau HD',
     'prima tv': 'Prima TV Moldova HD',
     'exclusiv': 'Exclusiv TV HD',
     'global24': 'Global 24 HD',
     'n4': 'N4 HD',
     'tvc21': 'TVC 21',
     '7tv': '7TV HD',
-    'tv9': 'TV9 HD',
-    'unu1tv': 'unu1TV HD',
     'premiera': 'Premiera TV HD',
-    'noroc': 'Noroc TV HD',
-    'vocea basarabiei': 'Vocea Basarabiei HD',
     'studio-l': 'Studio-L HD',
     'national tv': 'National TV',
-    'rtv': 'RTV (ex. Canal Regional)',
+    'rtv': 'RTV',
     'profi24': 'Profi 24',
     'kapital': 'Kapital TV HD',
     'm plus': 'M Plus TV HD',
@@ -62,17 +56,22 @@ RUSSIAN_NAMES = {
     'next tv': 'Next TV HD',
     'elita': 'Elita TV',
     'b1 tv': 'B1 TV HD',
-    'columna': 'Columna TV',
-    'muscel': 'Muscel TV HD',
-    'quantum': 'Quantum TV HD',
-    'a7': 'A7 HD',
-    'bucovina': 'Bucovina TV HD',
     
-    # Россия (добавленные!)
+    # Россия
     'russia1': 'Россия 1 HD',
     'zvezda': 'Звезда HD',
+    'russia24': 'Россия 24 HD',
+    'ntv': 'НТВ HD',
+    'tnt': 'ТНТ HD',
+    'sts': 'СТС HD',
+    'ren': 'РЕН ТВ HD',
+    '5tv': 'Пятый канал HD',
+    'match': 'Матч ТВ HD',
+    'spas': 'Спас HD',
+    'karusel': 'Карусель HD',
+    '1tv': 'Первый канал HD',
     
-    # Документальные (ВИЖУ ХИСТОРИ!)
+    # Документальные
     'viju history': 'viju History HD',
     'viju explore': 'viju Explore HD',
     'national geographic': 'National Geographic HD',
@@ -110,64 +109,64 @@ RUSSIAN_NAMES = {
     'cinewow': 'CineWow HD',
     'fx life': 'FX Life HD',
     'кинокомедия': 'Кинокомедия',
-    
-    # Сериалы
-    'viju+ serial': 'viju+ Serial HD',
 }
 
 # ============================================
-# 3. КАНАЛЫ ДЛЯ УДАЛЕНИЯ (украинские и румынские)
+# 3. ИСКЛЮЧАЕМ УКРАИНСКИЕ И РУМЫНСКИЕ
 # ============================================
 
 EXCLUDE_KEYWORDS = [
-    # Украинские
-    '1+1', 'интер', 'украина', 'ukraine', 'ukr', 'inter',
-    'ntn', 'tv7', 'tv9', 'tv8', 'tvr', 'acasa',
-    'tnt', 'rtr', 'stc', '5 tv', 'плюс',
-    # Румынские  
-    'romania', 'romanian', '.ro',
-    'antena', 'digi', 'telekom', 'kiss tv',
-    'orangesport', 'orange tv', 'procinema',
-    'tvr 1', 'tvr2', 'tvr3', 'acasa gold',
-    # Убираем лишнее
-    'exclusiv tv', 'global 24', 'rtv', 'columna',
-    'muscel', 'quantum', 'a7', 'bucovina',
+    'ukraine', 'ukr', 'inter', 'ntn', 'tvr', 'acasa',
+    'romania', 'romanian', '.ro', 'antena', 'digi', 'telekom',
+    'kiss tv', 'orangesport', 'orange tv', 'procinema',
+    'tvr1', 'tvr2', 'tvr3', 'acasa gold',
 ]
 
 # ============================================
-# 4. ИСТОЧНИКИ
+# 4. ИСТОЧНИКИ (РАБОЧИЕ!)
 # ============================================
 
-SOURCES = [
-    # Молдова
-    'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/md.m3u',
-    'https://iptv-org.github.io/iptv/countries/md.m3u',
-    
-    # Россия
-    'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/ru.m3u',
-    
-    # Фильмы и сериалы
-    'https://iptv-org.github.io/iptv/categories/movies.m3u',
-    'https://iptv-org.github.io/iptv/categories/series.m3u',
-]
+SOURCES = {
+    'tv': [
+        'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/md.m3u',
+        'https://iptv-org.github.io/iptv/countries/md.m3u',
+        'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/ru.m3u',
+    ],
+    'movies': [
+        'https://iptv-org.github.io/iptv/categories/movies.m3u',
+        'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/movies.m3u',
+    ],
+    'series': [
+        'https://iptv-org.github.io/iptv/categories/series.m3u',
+    ],
+    'documentary': [
+        'https://iptv-org.github.io/iptv/categories/documentary.m3u',
+    ],
+}
 
 # ============================================
 # 5. ФУНКЦИИ
 # ============================================
 
 def download_m3u(url):
-    for attempt in range(2):
+    for attempt in range(3):
         try:
             r = requests.get(url, timeout=CONFIG['timeout'])
             if r.status_code == 200:
                 return r.text
-        except:
-            time.sleep(1)
+            elif r.status_code == 404:
+                print(f"    ⚠️ 404 - файл не найден")
+                return None
+        except Exception as e:
+            print(f"    ⚠️ Попытка {attempt+1}: {str(e)[:30]}")
+            time.sleep(2)
     return None
 
 def parse_m3u(content):
     channels = []
     seen = set()
+    if not content:
+        return channels
     lines = content.split('\n')
     i = 0
     while i < len(lines):
@@ -207,7 +206,6 @@ def get_poster(title):
     return "data:image/svg+xml," + svg.replace(' ', '%20').replace('\n', '')
 
 def should_exclude(line):
-    """Проверка, нужно ли исключить канал"""
     combined = line.lower()
     for keyword in EXCLUDE_KEYWORDS:
         if keyword.lower() in combined:
@@ -216,7 +214,11 @@ def should_exclude(line):
 
 def is_movie(line):
     combined = line.lower()
-    movie_keywords = ['film', 'movie', 'кино', 'фильм', 'кинокомедия', 'кинодрама', 'bollywood']
+    movie_keywords = [
+        'фильм', 'кино', 'movie', 'film', 'кинокомедия', 'кинодрама',
+        'bollywood', 'tv1000', 'мосфильм', 'кинопремьера', 'кинохит',
+        'киносемья', 'мужское кино', 'родное кино'
+    ]
     for keyword in movie_keywords:
         if keyword in combined:
             return True
@@ -224,16 +226,8 @@ def is_movie(line):
 
 def is_series(line):
     combined = line.lower()
-    series_keywords = ['series', 'serial', 'сериал', 'сериалы', 'сез', 'season']
+    series_keywords = ['сериал', 'сериалы', 'series', 'serial', 'сез', 'season', 'эпизод']
     for keyword in series_keywords:
-        if keyword in combined:
-            return True
-    return False
-
-def is_documentary(line):
-    combined = line.lower()
-    doc_keywords = ['documentary', 'документ', 'discovery', 'history', 'наука', 'живая планета', 'viju explore']
-    for keyword in doc_keywords:
         if keyword in combined:
             return True
     return False
@@ -248,7 +242,7 @@ def is_moldovan(line):
 
 def is_russian(line):
     combined = line.lower()
-    russian_keywords = ['russia', 'россия', '1tv', 'rtr', 'russia1', 'zvezda']
+    russian_keywords = ['russia', 'россия', '1tv', 'rtr', 'russia1', 'zvezda', 'russia24', 'ntv', 'тнт']
     for keyword in russian_keywords:
         if keyword in combined:
             return True
@@ -264,27 +258,18 @@ def get_russian_name(line):
 def get_category(line, url):
     combined = (line + ' ' + url).lower()
     
-    # Проверяем исключения (украинские и румынские)
     if should_exclude(line):
         return '🚫 ИСКЛЮЧЕН'
     
-    # Фильмы (отдельно!)
-    if is_movie(line):
-        return '🎬 ФИЛЬМЫ (онлайн)'
-    
-    # Сериалы (отдельно!)
     if is_series(line):
         return '📺 СЕРИАЛЫ (онлайн)'
     
-    # Документальные
-    if is_documentary(line):
-        return '🌍 ДОКУМЕНТАЛЬНЫЕ'
+    if is_movie(line):
+        return '🎬 ФИЛЬМЫ (онлайн)'
     
-    # Молдова
     if is_moldovan(line):
         return '🇲🇩 МОЛДОВА'
     
-    # Россия
     if is_russian(line):
         return '🇷🇺 РОССИЯ'
     
@@ -292,90 +277,93 @@ def get_category(line, url):
 
 def build_playlist():
     print("\n" + "="*70)
-    print("📺 НОВАЯ СЕТКА - МОЛДОВА + РОССИЯ + ФИЛЬМЫ")
+    print("📺 СБОРКА - МОЛДОВА + РОССИЯ + ФИЛЬМЫ + СЕРИАЛЫ")
     print("="*70)
     print(f"📅 {datetime.now().strftime('%d.%m.%Y %H:%M:%S')}")
     print("="*70 + "\n")
     
     all_channels = []
-    stats = {'movies': 0, 'series': 0, 'russia': 0, 'moldova': 0, 'doc': 0, 'other': 0, 'excluded': 0}
+    stats = {'movies': 0, 'series': 0, 'russia': 0, 'moldova': 0, 'other': 0, 'excluded': 0}
     
-    for url in SOURCES:
-        print(f"📡 {url[:60]}...")
-        content = download_m3u(url)
-        if not content:
-            print("    ❌ Ошибка")
-            continue
+    for source_type, urls in SOURCES.items():
+        if source_type == 'tv':
+            print("📡 ТВ-КАНАЛЫ:")
+        elif source_type == 'movies':
+            print("\n🎬 ФИЛЬМЫ (ищу источники...):")
+        elif source_type == 'series':
+            print("\n📺 СЕРИАЛЫ (ищу источники...):")
+        elif source_type == 'documentary':
+            print("\n🌍 ДОКУМЕНТАЛЬНЫЕ:")
         
-        channels = parse_m3u(content)
-        print(f"    ✅ Найдено: {len(channels)}")
-        added = 0
-        
-        for line, url in channels:
-            if len(all_channels) >= CONFIG['max_channels']:
-                break
-            
-            category = get_category(line, url)
-            
-            if category == '🚫 ИСКЛЮЧЕН':
-                stats['excluded'] += 1
+        for url in urls:
+            print(f"  📥 {url}")
+            content = download_m3u(url)
+            if not content:
+                print("    ❌ Недоступно")
                 continue
             
-            if category == '🎬 ФИЛЬМЫ (онлайн)':
-                if stats['movies'] >= CONFIG['max_movies']:
-                    continue
-                name_match = re.search(r',([^,]+)$', line)
-                if name_match:
-                    name = name_match.group(1).strip()
-                    poster = get_poster(name)
-                    line = re.sub(r',[^,]*$', f',{name}', line)
-                    line = line.replace('#EXTINF:', f'#EXTINF:tvg-logo="{poster}" ')
-                all_channels.append((line, url))
-                stats['movies'] += 1
-                added += 1
+            channels = parse_m3u(content)
+            print(f"    ✅ Найдено: {len(channels)}")
+            added = 0
             
-            elif category == '📺 СЕРИАЛЫ (онлайн)':
-                if stats['series'] >= CONFIG['max_series']:
+            for line, url in channels:
+                if len(all_channels) >= CONFIG['max_channels']:
+                    break
+                
+                category = get_category(line, url)
+                
+                if category == '🚫 ИСКЛЮЧЕН':
+                    stats['excluded'] += 1
                     continue
-                name_match = re.search(r',([^,]+)$', line)
-                if name_match:
-                    name = name_match.group(1).strip()
-                    poster = get_poster(name)
-                    line = re.sub(r',[^,]*$', f',{name}', line)
-                    line = line.replace('#EXTINF:', f'#EXTINF:tvg-logo="{poster}" ')
-                all_channels.append((line, url))
-                stats['series'] += 1
-                added += 1
-            
-            elif category in ['🇷🇺 РОССИЯ', '🇲🇩 МОЛДОВА', '🌍 ДОКУМЕНТАЛЬНЫЕ']:
-                name = get_russian_name(line)
-                if name:
-                    line = re.sub(r',[^,]*$', f',{name}', line)
-                all_channels.append((line, url))
-                if category == '🇷🇺 РОССИЯ':
-                    stats['russia'] += 1
-                elif category == '🇲🇩 МОЛДОВА':
-                    stats['moldova'] += 1
+                
+                if category in ['🎬 ФИЛЬМЫ (онлайн)', '📺 СЕРИАЛЫ (онлайн)']:
+                    # Проверяем лимиты
+                    if category == '🎬 ФИЛЬМЫ (онлайн)' and stats['movies'] >= CONFIG['max_movies']:
+                        continue
+                    if category == '📺 СЕРИАЛЫ (онлайн)' and stats['series'] >= CONFIG['max_series']:
+                        continue
+                    
+                    # Добавляем постер
+                    name_match = re.search(r',([^,]+)$', line)
+                    if name_match:
+                        name = name_match.group(1).strip()
+                        poster = get_poster(name)
+                        line = re.sub(r',[^,]*$', f',{name}', line)
+                        line = line.replace('#EXTINF:', f'#EXTINF:tvg-logo="{poster}" ')
+                    
+                    all_channels.append((line, url))
+                    if category == '🎬 ФИЛЬМЫ (онлайн)':
+                        stats['movies'] += 1
+                    else:
+                        stats['series'] += 1
+                    added += 1
+                
+                elif category in ['🇷🇺 РОССИЯ', '🇲🇩 МОЛДОВА']:
+                    name = get_russian_name(line)
+                    if name:
+                        line = re.sub(r',[^,]*$', f',{name}', line)
+                    all_channels.append((line, url))
+                    if category == '🇷🇺 РОССИЯ':
+                        stats['russia'] += 1
+                    else:
+                        stats['moldova'] += 1
+                    added += 1
+                
                 else:
-                    stats['doc'] += 1
-                added += 1
+                    all_channels.append((line, url))
+                    stats['other'] += 1
+                    added += 1
             
-            else:
-                all_channels.append((line, url))
-                stats['other'] += 1
-                added += 1
-        
-        if added > 0:
-            print(f"    ✅ +{added} добавлено")
+            if added > 0:
+                print(f"    ✅ +{added} добавлено")
     
     print("\n" + "="*70)
     print(f"📊 ВСЕГО КАНАЛОВ: {len(all_channels)}")
     print(f"   🎬 Фильмы (онлайн): {stats['movies']}")
     print(f"   📺 Сериалы (онлайн): {stats['series']}")
-    print(f"   🌍 Документальные: {stats['doc']}")
     print(f"   🇷🇺 Россия: {stats['russia']}")
     print(f"   🇲🇩 Молдова: {stats['moldova']}")
-    print(f"   🚫 Исключено (украинские/румынские): {stats['excluded']}")
+    print(f"   🚫 Исключено: {stats['excluded']}")
     print("="*70)
     
     return all_channels
@@ -395,7 +383,6 @@ def save_playlist(channels):
     priority = [
         '🎬 ФИЛЬМЫ (онлайн)',
         '📺 СЕРИАЛЫ (онлайн)',
-        '🌍 ДОКУМЕНТАЛЬНЫЕ',
         '🇷🇺 РОССИЯ',
         '🇲🇩 МОЛДОВА',
         '📺 ТВ-КАНАЛЫ'
@@ -404,7 +391,7 @@ def save_playlist(channels):
     try:
         with open('playlist.m3u', 'w', encoding='utf-8') as f:
             f.write('#EXTM3U\n')
-            f.write(f'# 📺 НОВАЯ СЕТКА - ТОЛЬКО НУЖНОЕ!\n')
+            f.write(f'# 📺 МОЛДОВА + РОССИЯ + ФИЛЬМЫ + СЕРИАЛЫ\n')
             f.write(f'# 📅 Обновлено: {datetime.now().strftime("%d.%m.%Y %H:%M:%S")}\n')
             f.write(f'# 📊 Всего: {len(channels)}\n\n')
             
@@ -434,10 +421,11 @@ def main():
         print("\n📎 ССЫЛКА ДЛЯ ПЛЕЕРА:")
         print("https://raw.githubusercontent.com/kipirceni-ship-it/my-iptv/main/playlist.m3u")
         print("\n✅ ЧТО СДЕЛАНО:")
-        print("   🚫 Убраны все украинские и румынские каналы")
-        print("   📺 Добавлены viju History HD, Россия 1 HD, Звезда HD")
-        print("   🎬 Фильмы и сериалы ОТДЕЛЬНО с постерами")
-        print("   🏷️ Все названия на русском языке")
+        print("   🎬 Фильмы - ищем в 2-х источниках")
+        print("   📺 Сериалы - ищем в 1-м источнике")
+        print("   🇷🇺 Россия - все федеральные")
+        print("   🇲🇩 Молдова - все каналы")
+        print("   🚫 Убраны украинские и румынские")
     else:
         print("\n❌ Плейлист не создан!")
 
