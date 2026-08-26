@@ -21,8 +21,8 @@ CONFIG = {
     'timeout': 15,
     'max_channels': 10000,
     'threads': 10,
-    'max_movies': 3000,      # Максимум фильмов
-    'max_series': 2000,      # Максимум сериалов
+    'max_movies': 3000,
+    'max_series': 2000,
 }
 
 # ============================================
@@ -51,26 +51,21 @@ RUSSIAN_NAMES = {
 }
 
 # ============================================
-# 3. ИСТОЧНИКИ (ВСЕ, ГДЕ ЕСТЬ ВИДЕО)
+# 3. ИСТОЧНИКИ
 # ============================================
 
 SOURCES = [
-    # ТВ-каналы
     'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/ru.m3u',
     'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/md.m3u',
-    
-    # Фильмы и сериалы (ЭТО ВАЖНО!)
     'https://iptv-org.github.io/iptv/categories/movies.m3u',
     'https://iptv-org.github.io/iptv/categories/series.m3u',
     'https://iptv-org.github.io/iptv/categories/kids.m3u',
     'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/movies.m3u',
-    
-    # Дополнительные источники фильмов
     'https://raw.githubusercontent.com/Free-IPTV/Countries/master/movies.m3u',
 ]
 
 # ============================================
-# 4. КЛЮЧЕВЫЕ СЛОВА ДЛЯ ФИЛЬМОВ И СЕРИАЛОВ
+# 4. КЛЮЧЕВЫЕ СЛОВА
 # ============================================
 
 MOVIE_KEYWORDS = [
@@ -134,11 +129,9 @@ def get_poster(title):
     clean_title = re.sub(r'HD|FULL|4K|1080|720|SD', '', clean_title, flags=re.IGNORECASE)
     clean_title = clean_title.strip()
     
-    # Если название длинное - обрезаем
     if len(clean_title) > 22:
         clean_title = clean_title[:20] + '…'
     
-    # Создаём SVG постер
     svg = f"""<svg xmlns='http://www.w3.org/2000/svg' width='200' height='280'>
         <rect width='200' height='280' fill='{color}' rx='8'/>
         <rect x='10' y='10' width='180' height='180' fill='rgba(255,255,255,0.1)' rx='4'/>
@@ -146,7 +139,7 @@ def get_poster(title):
         <text x='100' y='245' font-family='Arial' font-size='12' fill='rgba(255,255,255,0.7)' text-anchor='middle'>▶ Нажми для просмотра</text>
     </svg>"""
     
-    return f"data:image/svg+xml,{svg.replace(' ', '%20').replace('\n', '')}"
+    return "data:image/svg+xml," + svg.replace(' ', '%20').replace('\n', '')
 
 def is_movie(line):
     combined = line.lower()
@@ -181,7 +174,6 @@ def is_moldovan(line):
 def get_category(line, url):
     combined = (line + ' ' + url).lower()
     
-    # Сначала фильмы и сериалы
     if is_series(line):
         return '📺 СЕРИАЛЫ (онлайн)'
     elif is_movie(line):
@@ -194,7 +186,6 @@ def get_category(line, url):
         return '📺 ТВ-КАНАЛЫ'
 
 def build_playlist():
-    """Сборка плейлиста"""
     print("\n" + "="*70)
     print("🎬 LAMPA СТИЛЬ - ФИЛЬМЫ И СЕРИАЛЫ С ПОСТЕРАМИ!")
     print("="*70)
@@ -202,14 +193,7 @@ def build_playlist():
     print("="*70 + "\n")
     
     all_channels = []
-    stats = {
-        'movies': 0,
-        'series': 0,
-        'russia': 0,
-        'moldova': 0,
-        'other': 0
-    }
-    
+    stats = {'movies': 0, 'series': 0, 'russia': 0, 'moldova': 0, 'other': 0}
     total_sources = len(SOURCES)
     
     for i, url in enumerate(SOURCES, 1):
@@ -233,7 +217,6 @@ def build_playlist():
             
             category = get_category(line, url)
             
-            # ДЛЯ ФИЛЬМОВ: добавляем постер и делаем кликабельным
             if category == '🎬 ФИЛЬМЫ (онлайн)':
                 if stats['movies'] >= CONFIG['max_movies']:
                     continue
@@ -241,14 +224,12 @@ def build_playlist():
                 if name_match:
                     name = name_match.group(1).strip()
                     poster = get_poster(name)
-                    # Добавляем постер и название
                     line = re.sub(r',[^,]*$', f',{name}', line)
                     line = line.replace('#EXTINF:', f'#EXTINF:tvg-logo="{poster}" ')
                 all_channels.append((line, url))
                 stats['movies'] += 1
                 added += 1
                 
-            # ДЛЯ СЕРИАЛОВ: добавляем постер
             elif category == '📺 СЕРИАЛЫ (онлайн)':
                 if stats['series'] >= CONFIG['max_series']:
                     continue
@@ -262,9 +243,7 @@ def build_playlist():
                 stats['series'] += 1
                 added += 1
                 
-            # РОССИЯ
             elif category == '🇷🇺 РОССИЯ':
-                # Добавляем русское название
                 for eng, rus in RUSSIAN_NAMES.items():
                     if eng.lower() in line.lower():
                         line = re.sub(r',[^,]*$', f',{rus}', line)
@@ -273,13 +252,11 @@ def build_playlist():
                 stats['russia'] += 1
                 added += 1
                 
-            # МОЛДОВА
             elif category == '🇲🇩 МОЛДОВА':
                 all_channels.append((line, url))
                 stats['moldova'] += 1
                 added += 1
                 
-            # ОСТАЛЬНЫЕ ТВ-КАНАЛЫ
             else:
                 all_channels.append((line, url))
                 stats['other'] += 1
@@ -300,12 +277,10 @@ def build_playlist():
     return all_channels
 
 def save_playlist(channels):
-    """Сохранить плейлист с категориями"""
     if not channels:
         print("\n❌ Нет каналов!")
         return False
     
-    # Группировка
     grouped = {}
     for line, url in channels:
         category = get_category(line, url)
@@ -313,13 +288,7 @@ def save_playlist(channels):
             grouped[category] = []
         grouped[category].append(f"{line}\n{url}")
     
-    priority = [
-        '🎬 ФИЛЬМЫ (онлайн)',
-        '📺 СЕРИАЛЫ (онлайн)',
-        '🇷🇺 РОССИЯ',
-        '🇲🇩 МОЛДОВА',
-        '📺 ТВ-КАНАЛЫ'
-    ]
+    priority = ['🎬 ФИЛЬМЫ (онлайн)', '📺 СЕРИАЛЫ (онлайн)', '🇷🇺 РОССИЯ', '🇲🇩 МОЛДОВА', '📺 ТВ-КАНАЛЫ']
     
     try:
         with open('playlist.m3u', 'w', encoding='utf-8') as f:
