@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-🎯 ПРОСТОЙ ПЛЕЙЛИСТ - ТОЛЬКО РАБОЧИЕ КАНАЛЫ!
+📺 ПРОСТОЙ ПЛЕЙЛИСТ ДЛЯ LG TV
+Только ваши каналы!
 """
 
 import requests
@@ -10,7 +11,7 @@ import re
 from datetime import datetime
 
 # ============================================
-# 1. ВАШИ КАНАЛЫ (ТОЧНЫЕ НАЗВАНИЯ)
+# 1. ВАШИ КАНАЛЫ
 # ============================================
 
 YOUR_CHANNELS = [
@@ -31,13 +32,13 @@ YOUR_CHANNELS = [
     'Россия 1',
     'Звезда',
     'Звезда Плюс',
-    # Молдова
+    # Молдова (ТОЛЬКО ТВ7 и ТВ9)
     'TV7',
     'TV9',
 ]
 
 # ============================================
-# 2. КАТЕГОРИИ
+# 2. КАТЕГОРИИ (ДЛЯ УДОБСТВА)
 # ============================================
 
 CATEGORIES = {
@@ -47,7 +48,7 @@ CATEGORIES = {
 }
 
 # ============================================
-# 3. ИСТОЧНИКИ (ПРОВЕРЕННЫЕ)
+# 3. ТОЛЬКО РОССИЯ И МОЛДОВА (БЕЗ РУМЫН, УКРАИНЫ, MOLDOVA 1)
 # ============================================
 
 SOURCES = [
@@ -111,7 +112,7 @@ def clean_name(line):
 
 def build_playlist():
     print("\n" + "="*60)
-    print("🎯 СБОРКА ПРОСТОГО ПЛЕЙЛИСТА")
+    print("📺 СБОРКА ПЛЕЙЛИСТА ДЛЯ LG TV")
     print("="*60)
     print(f"📅 {datetime.now().strftime('%d.%m.%Y %H:%M:%S')}")
     print("="*60 + "\n")
@@ -129,10 +130,13 @@ def build_playlist():
         channels = parse_m3u(content)
         print(f"    ✅ Найдено: {len(channels)}")
         
-        found_count = 0
         for line, url in channels:
             channel_name = find_channel(line)
             if not channel_name:
+                continue
+            
+            # Пропускаем Moldova 1 (она не в списке)
+            if 'moldova 1' in line.lower():
                 continue
             
             if url in seen_urls:
@@ -143,7 +147,6 @@ def build_playlist():
             if not category:
                 continue
             
-            # Чистое название
             name_match = re.search(r',([^,]+)$', line)
             if name_match:
                 name = name_match.group(1).strip()
@@ -153,16 +156,11 @@ def build_playlist():
             if channel_name not in found:
                 found[channel_name] = []
             found[channel_name].append((line, url, category))
-            found_count += 1
-        
-        if found_count > 0:
-            print(f"    ✅ +{found_count} каналов")
     
     print("\n" + "="*60)
     print(f"📊 НАЙДЕНО: {len(found)} из {len(YOUR_CHANNELS)}")
     print("="*60)
     
-    # Отчёт
     for channel in YOUR_CHANNELS:
         if channel in found:
             print(f"   ✅ {channel}")
@@ -187,7 +185,7 @@ def save_playlist(found):
     try:
         with open('playlist.m3u', 'w', encoding='utf-8') as f:
             f.write('#EXTM3U\n')
-            f.write(f'# 🎯 ПРОСТОЙ ПЛЕЙЛИСТ\n')
+            f.write(f'# 📺 ПЛЕЙЛИСТ ДЛЯ LG TV\n')
             f.write(f'# 📅 Обновлено: {datetime.now().strftime("%d.%m.%Y %H:%M:%S")}\n')
             f.write(f'# 📊 Всего: {sum(len(v) for v in found.values())}\n\n')
             
@@ -215,7 +213,7 @@ def main():
     found = build_playlist()
     if found:
         save_playlist(found)
-        print("\n📎 ССЫЛКА ДЛЯ ПЛЕЕРА:")
+        print("\n📎 ССЫЛКА ДЛЯ SS IPTV / MIKA PLAYER:")
         print("https://raw.githubusercontent.com/kipirceni-ship-it/my-iptv/main/playlist.m3u")
         print("\n🔄 Обновляется каждые 6 часов")
     else:
