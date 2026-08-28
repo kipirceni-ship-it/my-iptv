@@ -1,175 +1,37 @@
 #EXTM3U
-# 🎯 17 ВАШИХ КАНАЛОВ!
-# 📅 Обновлено: 28.08.2026 12:04:08
-# 📊 Всего: 81
+# 🎯 17 ВАШИХ КАНАЛОВ (БЕЗ ДУБЛЕЙ!)
+# 📅 Обновлено: 28.08.2026 12:16:58
+# 📊 Всего: 12
 
 # ==========================================
-#  📁 🎬 ФИЛЬМЫ И СЕРИАЛЫ (20)
+#  📁 🎬 ФИЛЬМЫ И СЕРИАЛЫ (8)
 # ==========================================
 
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#2ecc71'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>Amedia%20Hit</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="AmediaHit.ru@SD",amedia premium hd
+#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#e74c3c'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>Amedia%20Hit</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="AmediaHit.ru@SD",amedia premium hd
 http://stream.mcquack.net/162/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#2ecc71'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>Amedia%201</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="A1.ru@SD" tvg-logo="https://i.imgur.com/2pAHdAi.png" group-title="Music",amedia premium hd
-http://31.148.48.15/A1/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#3498db'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>Amedia%202</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="A2.ru@SD" tvg-logo="https://i.imgur.com/NqHla2V.png" group-title="Series",amedia premium hd
-http://31.148.48.15/A2/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#9b59b6'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>Amedia%20Premium</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="AmediaPremium.ru@SD" tvg-logo="https://i.imgur.com/UUjehw9.png" group-title="Movies;Series",amedia premium hd
-http://31.148.48.15/Amedia_Premium_HD/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#2ecc71'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>Aurora%20Media%20Films</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="AuroraMediaFilms.gt@SD" tvg-logo="https://i.imgur.com/DVC5w6H.png" group-title="Movies",amedia premium hd
-https://cdn.streamhispanatv.net:3417/live/auroramflive.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#9b59b6'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>Mosfilm%20Gold%20Collect…</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="MosfilmGoldCollection.ru@SD",мосфильм золотая коллекция
+#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#2ecc71'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>Mosfilm%20Gold%20Collect…</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="MosfilmGoldCollection.ru@SD",мосфильм золотая коллекция
 http://31.222.235.15/mosfilm/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#e74c3c'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>Muzhskoe%20kino</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="Muzhskoekino.ru@SD",мужское кино
+#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#3498db'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>Muzhskoe%20kino</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="Muzhskoekino.ru@SD",мужское кино
 http://stream.mcquack.net/107/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#e74c3c'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>TV1000%20Russian%20Kino%20…</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="TV1000RussianKinoGlobal.ru@SD",tv1000
+#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#2ecc71'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>TV1000%20Russian%20Kino%20…</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="TV1000RussianKinoGlobal.ru@SD",tv1000
 http://213.91.179.28:8000/play/a0bx
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#9b59b6'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>viju%20TV1000</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="vijuTV1000.ru@SD",tv1000
-http://stream.mcquack.net/110/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#e74c3c'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>viju%20TV1000%20action</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="vijuTV1000action.ru@SD",tv1000
-http://stream.mcquack.net/100/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#e74c3c'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>viju%20TV1000%20action</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="vijuTV1000action.ru@SD",tv1000
-https://stream8.cinerama.uz/1225/tracks-v1a1/mono.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#3498db'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>viju%20TV1000%20russkoe</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="vijuTV1000russkoe.ru@SD",tv1000
-https://stream8.cinerama.uz/1058/tracks-v1a1/mono.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#e74c3c'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>viju%20TV1000%20Русское</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="vijuTV1000russkoe.ru@SD" tvg-logo="https://i.imgur.com/Meak2y4.png" group-title="Movies",tv1000
-http://31.148.48.15/TV1000_Russkoe_kino/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#9b59b6'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>viju%20History</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="vijuHistory.ru@SD",viju history
+#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#f39c12'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>viju%20History</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="vijuHistory.ru@SD",viju history
 http://178.124.179.122:8080/HistoryHD/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#9b59b6'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>viju+%20Megahit</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="vijuPlusMegahit.ru@HD",viju+ meghit
-http://stream.mcquack.net/200/index.m3u8
 #EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#3498db'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>viju+%20Premiere</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="vijuPlusPremiere.ru@HD",viju+ premiere
 http://stream.mcquack.net/202/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#3498db'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>Cine%20Premiere</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="CinePremiere.us@SD" tvg-logo="https://i.imgur.com/PdhWTO6.png" group-title="Movies",viju+ premiere
-https://jmp2.uk/plu-5cf968040ab7d8f181e6a68b.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#f39c12'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>viju+%20Serial</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="vijuPlusSerial.ru@HD",viju+ serial
+#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#9b59b6'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>viju+%20Serial</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="vijuPlusSerial.ru@HD",viju+ serial
 http://stream.mcquack.net/311/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#3498db'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>Мир%20Сериала</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="MirSeriala.ru@SD" tvg-logo="https://i.imgur.com/uzj7wVp.png" group-title="Series",viju+ serial
-http://31.148.48.15/Mir_Seriala/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#f39c12'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>Сити%20Эдем%20КиноСемья</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="CityEdenKinoSemya.ru@HD" tvg-logo="https://i.imgur.com/YoWOZMx.png" group-title="Movies",киносемья
+#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#e74c3c'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>Сити%20Эдем%20КиноСемья</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="CityEdenKinoSemya.ru@HD" tvg-logo="https://i.imgur.com/YoWOZMx.png" group-title="Movies",киносемья
 https://v2.catcast.tv/content/38128/index.m3u8
 
 # ==========================================
-#  📁 🇷🇺 РОССИЯ (59)
+#  📁 🇷🇺 РОССИЯ (2)
 # ==========================================
 
-#EXTINF:-1 tvg-id="Russia1.ru@SD",россия 1
-https://stream8.cinerama.uz/1020/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="Russia1.ru@HD",россия 1
-https://stream.smotrim.ru/hls2/russia_hd/playlist_6.m3u8
-#EXTINF:-1 tvg-id="Russia1.ru@SD",россия 1
-http://109.207.243.18/2/index.m3u8
-#EXTINF:-1 tvg-id="Russia1.ru@Plus9" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",россия 1
-https://vgtrkregion-reg.cdnvideo.ru/vgtrk/9/russia1-hd/index.m3u8
-#EXTINF:-1 tvg-id="Russia1.ru@Plus4" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",россия 1
-https://vgtrkregion-reg.cdnvideo.ru/vgtrk/4/russia1-hd/index.m3u8
-#EXTINF:-1 tvg-id="Russia1.ru@Plus5" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",россия 1
-https://vgtrkregion-reg.cdnvideo.ru/vgtrk/5/russia1-hd/index.m3u8
-#EXTINF:-1 tvg-id="Russia1.ru@Plus6" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",россия 1
-https://vgtrkregion-reg.cdnvideo.ru/vgtrk/6/russia1-hd/index.m3u8
-#EXTINF:-1 tvg-id="Russia1.ru@Plus7" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",россия 1
-https://vgtrkregion-reg.cdnvideo.ru/vgtrk/7/russia1-hd/index.m3u8
-#EXTINF:-1 tvg-id="Russia1.ru@Plus8" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",россия 1
-https://vgtrkregion-reg.cdnvideo.ru/vgtrk/8/russia1-hd/index.m3u8
-#EXTINF:-1 tvg-id="Russia1.ru@SD" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",россия 1
-http://vgtrkregion-reg.cdnvideo.ru/vgtrk/maykop/russia1-hd/index.m3u8
-#EXTINF:-1 tvg-id="PlutoTVStarTrek.de@DACH" tvg-logo="https://images.pluto.tv/channels/6152ee71bf99590007893a11/colorLogoPNG.png" group-title="Movies;Series",россия 1
-https://jmp2.uk/plu-6152ee71bf99590007893a11.m3u8
-#EXTINF:-1 tvg-id="PlutoTVStarTrek.se@DK" tvg-logo="https://images.pluto.tv/channels/61c1979dfa307000070bbe4d/colorLogoPNG.png" group-title="Movies;Series",россия 1
-https://jmp2.uk/plu-61c1979dfa307000070bbe4d.m3u8
-#EXTINF:-1 tvg-id="PlutoTVTerrorTrash.us@BR" tvg-logo="https://images.pluto.tv/channels/66aa67493a4ad2000806d91b/colorLogoPNG.png" group-title="Movies",россия 1
-https://jmp2.uk/plu-66aa67493a4ad2000806d91b.m3u8
-#EXTINF:-1 tvg-id="StarTrekMovies.se@DK" tvg-logo="https://images.pluto.tv/channels/6400c281dff38e00083f59da/colorLogoPNG.png" group-title="Movies",россия 1
-https://jmp2.uk/plu-6400c281dff38e00083f59da.m3u8
-#EXTINF:-1 tvg-id="StarTrekMovies.se@NO" tvg-logo="https://images.pluto.tv/channels/6400c281dff38e00083f59da/colorLogoPNG.png" group-title="Movies",россия 1
-https://jmp2.uk/plu-6400c228498393000878a9b7.m3u8
-#EXTINF:-1 tvg-id="StarTrekMovies.se@SE" tvg-logo="https://images.pluto.tv/channels/6400c281dff38e00083f59da/colorLogoPNG.png" group-title="Movies",россия 1
-https://jmp2.uk/plu-6400c2a6cb41a40008dbe5bc.m3u8
-#EXTINF:-1 tvg-id="StarTrekDeepSpaceNine.us@SD" tvg-logo="https://images.pluto.tv/channels/65c69bbfd77d450008c7ffee/colorLogoPNG_1758310416057.png" group-title="Movies;Series",россия 1
-https://jmp2.uk/plu-65c69bbfd77d450008c7ffee.m3u8
-#EXTINF:-1 tvg-id="StarTrekTheNextGeneration.de@DACH" tvg-logo="https://images.pluto.tv/channels/69776ce979545c21a1220bff/colorLogoPNG_1769434849537.png" group-title="Movies;Series",россия 1
-https://jmp2.uk/plu-69776ce979545c21a1220bff.m3u8
-#EXTINF:-1 tvg-id="StarTrekTheNextGeneration.us@SD" tvg-logo="https://images.pluto.tv/channels/695c32e61ca20bb8ca802eb9/colorLogoPNG_1768440087394.png" group-title="Movies;Series",россия 1
-https://jmp2.uk/plu-695c32e61ca20bb8ca802eb9.m3u8
-#EXTINF:-1 tvg-id="StarTrekTheOriginalSeries.de@DACH" tvg-logo="https://images.pluto.tv/channels/69776b58036e883f39e5ab8a/colorLogoPNG_1769434091096.png" group-title="Movies;Series",россия 1
-https://jmp2.uk/plu-69776b58036e883f39e5ab8a.m3u8
-#EXTINF:-1 tvg-id="StarTrekTheOriginalSeries.se@DK" tvg-logo="https://images.pluto.tv/channels/693add137e308621c051e733/colorLogoPNG_1765465486347.png" group-title="Movies;Series",россия 1
-https://jmp2.uk/plu-693add137e308621c051e733.m3u8
-#EXTINF:-1 tvg-id="StarTrekTheOriginalSeries.se@NO" tvg-logo="https://images.pluto.tv/channels/693add137e308621c051e733/colorLogoPNG_1765465486347.png" group-title="Movies;Series",россия 1
-https://jmp2.uk/plu-693addd62bf6cf7414c4b2fc.m3u8
-#EXTINF:-1 tvg-id="StarTrekTheOriginalSeries.se@SE" tvg-logo="https://images.pluto.tv/channels/693add137e308621c051e733/colorLogoPNG_1765465486347.png" group-title="Movies;Series",россия 1
-https://jmp2.uk/plu-693ade4d569386f93f235bb6.m3u8
-#EXTINF:-1 tvg-id="StarTrekVoyager.de@ES" tvg-logo="https://images.pluto.tv/channels/65787f2eb228b7000843fa5c/colorLogoPNG.png" group-title="Movies;Series",россия 1
-https://jmp2.uk/plu-65787f2eb228b7000843fa5c.m3u8
-#EXTINF:-1 tvg-id="StarTrekVoyager.de@IT" tvg-logo="https://images.pluto.tv/channels/65787f2eb228b7000843fa5c/colorLogoPNG.png" group-title="Movies;Series",россия 1
-https://jmp2.uk/plu-65cb73d33ba51e00084cabad.m3u8
-#EXTINF:-1 tvg-id="StarTrekVoyager.us@SD" tvg-logo="https://images.pluto.tv/channels/634dacf51d90320007fcd5fa/colorLogoPNG_1758310287876.png" group-title="Movies;Series",россия 1
-https://jmp2.uk/plu-634dacf51d90320007fcd5fa.m3u8
-#EXTINF:-1 tvg-id="StarTrek.us@BR" tvg-logo="https://images.pluto.tv/channels/5efbd39f8c4ce900075d7698/colorLogoPNG.png" group-title="Series",россия 1
-https://jmp2.uk/plu-5f99ac4fded33000078f29ab.m3u8
-#EXTINF:-1 tvg-id="StarTrek.us@LatAm" tvg-logo="https://images.pluto.tv/channels/5efbd39f8c4ce900075d7698/colorLogoPNG.png" group-title="Series",россия 1
-https://jmp2.uk/plu-5ec5761aabe4690007f6e047.m3u8
-#EXTINF:-1 tvg-id="StarTrek.us@US" tvg-logo="https://images.pluto.tv/channels/5efbd39f8c4ce900075d7698/colorLogoPNG.png" group-title="Series",россия 1
-https://jmp2.uk/plu-5efbd39f8c4ce900075d7698.m3u8
 #EXTINF:-1 tvg-id="StarCinema.ru@SD",звезда
 https://dash2.antik.sk/live/test_star_cinema_atktv/playlist.m3u8
-#EXTINF:-1 tvg-id="StarFamily.ru@SD",звезда
-https://dash2.antik.sk/live/test_star_family_atktv/playlist.m3u8
-#EXTINF:-1 tvg-id="STARTAir.ru@SD",звезда
-http://stream.mcquack.net/128/index.m3u8
-#EXTINF:-1 tvg-id="Zvezda.ru@SD",звезда
-http://51.158.144.33:2021/zvezda/index.m3u8
-#EXTINF:-1 tvg-id="Zvezda.ru@SD",звезда
-https://stream8.cinerama.uz/1050/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="Zvezda.ru@HD",звезда
-https://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist.m3u8
-#EXTINF:-1 tvg-id="StarTV.md@SD",звезда
-http://forever.megogo.xyz/iptv/QGB4M3H62GC7E3/2465/index.m3u8
-#EXTINF:-1 tvg-id="TraceSportStars.fr@Russia" tvg-logo="https://i.imgur.com/FabFP5A.png" group-title="Sports",звезда
-https://stream8.cinerama.uz/1274/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="Zvezda.ru@HD" tvg-logo="https://i.imgur.com/4PAcpfM.png" group-title="General",звезда
-https://tvzvezda.bonus-tv.ru/cdn/tvzvezda/playlist.m3u8
-#EXTINF:-1 tvg-id="ZvezdaPlus.ru@HD" tvg-logo="https://i.imgur.com/NNmjD9Z.png" group-title="Undefined",звезда
-http://tvzvezda.bonus-tv.ru/cdn/zvezdaplus/playlist.m3u8
-#EXTINF:-1 tvg-id="StartTriumf.ru@SD" tvg-logo="https://i.imgur.com/L9jTieL.png" group-title="Sports",звезда
-https://bl.webcaster.pro/media/playlist/free_fe8dc1b768a84b8b0333db826471f17e_hd/33_85479982/1080p/8666c3e935faf6ef47ffd601e8e48868/4821408969.m3u8
-#EXTINF:-1 tvg-id="BattlestarGalactica.us@SD" tvg-logo="https://images.pluto.tv/channels/69d7ebff029c431826bd328e/colorLogoPNG_1776982986391.png" group-title="Movies;Series",звезда
-https://jmp2.uk/plu-69d7ebff029c431826bd328e.m3u8
-#EXTINF:-1 tvg-id="CineStar1Bulgaria.bg@SD" tvg-logo="https://i.imgur.com/t9vVTLH.png" group-title="Movies",звезда
-http://213.91.179.28:8000/play/a05h
-#EXTINF:-1 tvg-id="GoldStar.ir@SD" tvg-logo="" group-title="Movies",звезда
-https://moviethls.wns.live/hls/stream.m3u8
-#EXTINF:-1 tvg-id="StarChannel.cl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png" group-title="Movies;Series",звезда
-http://138.121.15.230:9002/STAR-CHANNEL/index.m3u8
-#EXTINF:-1 tvg-id="StarChannelLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png" group-title="Movies;Series",звезда
-http://15.204.246.24:8080/STARCHANNELHD/index.m3u8
-#EXTINF:-1 tvg-id="StarChannelLatinAmerica.us@CentralAmerica" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png" group-title="Movies;Series",звезда
-https://streamer.metronethn.com/StarChannel/index.m3u8
-#EXTINF:-1 tvg-id="StarGold2.in@SD" tvg-logo="https://i.imgur.com/G0ZfzZr.png" group-title="Movies",звезда
-http://103.253.18.58:8000/play/a00r
-#EXTINF:-1 tvg-id="StarGold.in@HD" tvg-logo="https://i.imgur.com/xC460sj.png" group-title="Movies",звезда
-http://103.253.18.58:8000/play/a00q
-#EXTINF:-1 tvg-id="StarGoldRomance.in@SD" tvg-logo="https://i.imgur.com/gSWv9U3.png" group-title="Movies",звезда
-http://103.253.18.58:8000/play/a017
-#EXTINF:-1 tvg-id="StarGoldSelect.in@HD" tvg-logo="https://i.imgur.com/U7eiuqv.png" group-title="Movies",звезда
-http://103.253.18.58:8000/play/a02u
-#EXTINF:-1 tvg-id="StarMaaMovies.in@HD" tvg-logo="https://dtil.tmsimg.com/assets/s143826_ld_h15_aa.png?lock=720x540" group-title="Movies",звезда
-https://da86m1sqpm3o0.cloudfront.net/28072023/smil:maamovies.smil/chunklist_b2628000.m3u8
-#EXTINF:-1 tvg-id="StarMovies.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_MOVIES/images/LOGO_HD/image.png" group-title="Movies",звезда
-http://149.71.34.166:8000/play/a01f/index.m3u8
-#EXTINF:-1 tvg-id="StarMoviesSelect.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_MOVIES_SELECT_HD/images/LOGO_HD/image.png" group-title="Movies",звезда
-http://149.71.34.166:8000/play/a01g/index.m3u8
-#EXTINF:-1 tvg-id="StarTamilTelevision.lk@SD" tvg-logo="https://i.imgur.com/fjHcr9z.jpg" group-title="Movies",звезда
-https://edge4-moblive.yuppcdn.net/trans1sd/smil:strtml19.smil/playlist.m3u8?dvr=
-#EXTINF:-1 tvg-id="StarUtsavMovies.in@SD" tvg-logo="https://i.imgur.com/k5QHfH2.png" group-title="Movies",звезда
-http://149.71.34.166:8000/play/a059/index.m3u8
-#EXTINF:-1 tvg-id="StarzCinema.us@East" tvg-logo="https://i.imgur.com/ghzzKoT.png" group-title="Movies",звезда
-http://23.237.104.106:8080/USA_STARZ_CINEMA/index.m3u8
-#EXTINF:-1 tvg-id="SuriyanTV.in@SD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Suriyan-tv-logo_2000_X_1125_Transpharent.png" group-title="Movies",звезда
-https://stream.sscloud7.com/live/suriyantv/index.m3u8
-#EXTINF:-1 tvg-id="TVEStar.es@SD" tvg-logo="https://i.ibb.co/j98NY8Mr/starcolor.png" group-title="Series",звезда
-https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/star_main_576.m3u8
-#EXTINF:-1 tvg-id="TVEStar.es@HD" tvg-logo="https://i.ibb.co/j98NY8Mr/starcolor.png" group-title="Series",звезда
-https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/star_main_1080.m3u8
+#EXTINF:-1 tvg-id="Russia1.ru@SD" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",россия 1
+http://vgtrkregion-reg.cdnvideo.ru/vgtrk/maykop/russia1-hd/index.m3u8
 
 # ==========================================
 #  📁 🇲🇩 МОЛДОВА (2)
