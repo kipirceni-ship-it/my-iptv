@@ -1,4 +1,4 @@
-name: Простая сборка IPTV
+name: Сборка плейлиста для LG TV
 
 on:
   schedule:
