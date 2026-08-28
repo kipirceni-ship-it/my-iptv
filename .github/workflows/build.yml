@@ -1,4 +1,4 @@
-name: Сборка IPTV
+name: Сборка только ваших каналов
 
 on:
   schedule:
