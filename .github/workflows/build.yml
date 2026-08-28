@@ -1,4 +1,4 @@
-name: Сборка 17 каналов
+name: Простая сборка IPTV
 
 on:
   schedule:
