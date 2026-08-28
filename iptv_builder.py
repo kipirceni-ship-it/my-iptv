@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-🎯 17 ВАШИХ КАНАЛОВ - С РАСШИРЕННЫМ ПОИСКОМ!
+🎯 17 ВАШИХ КАНАЛОВ - РАБОЧАЯ ВЕРСИЯ!
+С ОБНОВЛЕННЫМИ ИСТОЧНИКАМИ И РАСШИРЕННЫМ ПОИСКОМ!
 """
 
 import requests
@@ -19,7 +20,7 @@ CONFIG = {
 }
 
 # ============================================
-# 2. ВАШИ КАНАЛЫ С СИНОНИМАМИ (ДЛЯ ПОИСКА!)
+# 2. ВАШИ КАНАЛЫ С РАСШИРЕННЫМИ СИНОНИМАМИ
 # ============================================
 
 CHANNELS_WITH_SYNONYMS = {
@@ -37,14 +38,14 @@ CHANNELS_WITH_SYNONYMS = {
     'мужское кино': ['мужское кино', 'muzhskoe kino'],
     'мосфильм золотая коллекция': ['мосфильм', 'mosfilm', 'золотая коллекция'],
     
-    # Россия (3)
-    'россия 1': ['россия 1', 'russia 1', 'rtr', 'ртр', 'россия-1'],
-    'звезда': ['звезда', 'zvezda', 'star'],
-    'звезда плюс': ['звезда плюс', 'zvezda plus', 'star plus'],
+    # Россия (3) - РАСШИРЕННЫЙ ПОИСК!
+    'россия 1': ['россия 1', 'russia 1', 'rtr', 'ртр', 'россия-1', 'russia-1'],
+    'звезда': ['звезда', 'zvezda', 'star', 'tv zvezda'],
+    'звезда плюс': ['звезда плюс', 'zvezda plus', 'star plus', 'zvezda+'],
     
-    # Молдова (2)
-    'tv7': ['tv7', '7tv', 'tv 7', 'seven tv', 'tv7 moldova'],
-    'tv9': ['tv9', '9tv', 'tv 9', 'nine tv', 'tv9 moldova'],
+    # Молдова (2) - МАКСИМАЛЬНО РАСШИРЕННЫЙ ПОИСК!
+    'tv7': ['tv7', '7tv', 'tv 7', 'seven tv', 'tv7 moldova', '7 tv', 'canal 7', 'tvr 7'],
+    'tv9': ['tv9', '9tv', 'tv 9', 'nine tv', 'tv9 moldova', '9 tv', 'canal 9', 'tvr 9'],
 }
 
 # ============================================
@@ -58,18 +59,20 @@ CATEGORIES = {
 }
 
 # ============================================
-# 4. ИСТОЧНИКИ (РАСШИРЕННЫЕ)
+# 4. ТОЛЬКО РАБОЧИЕ ИСТОЧНИКИ (БЕЗ 404!)
 # ============================================
 
 SOURCES = [
+    # Основные, проверенные
     'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/ru.m3u',
     'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/md.m3u',
     'https://iptv-org.github.io/iptv/countries/ru.m3u',
     'https://iptv-org.github.io/iptv/countries/md.m3u',
+    # Категории
     'https://iptv-org.github.io/iptv/categories/movies.m3u',
     'https://iptv-org.github.io/iptv/categories/series.m3u',
-    'https://raw.githubusercontent.com/Free-IPTV/Countries/master/RU.m3u',
-    'https://raw.githubusercontent.com/Free-IPTV/Countries/master/MD.m3u',
+    # Запасные источники
+    'https://iptv-org.github.io/iptv/playlist.m3u',
 ]
 
 # ============================================
@@ -116,14 +119,12 @@ def find_channel(line):
     return None
 
 def get_category(main_name):
-    """Определить категорию"""
     for category, channels in CATEGORIES.items():
         if main_name in channels:
             return category
     return None
 
 def clean_name(line):
-    """Очистить название"""
     line = re.sub(r'\([^)]*\)', '', line)
     line = re.sub(r'\[[^\]]*\]', '', line)
     line = re.sub(r'HD|SD|FULL|4K|1080|720', '', line, flags=re.IGNORECASE)
@@ -144,9 +145,8 @@ def get_poster(title):
     return "data:image/svg+xml," + svg.replace(' ', '%20').replace('\n', '')
 
 def build_playlist():
-    """Сборка только ваших каналов"""
     print("\n" + "="*60)
-    print("🎯 ПОИСК 17 ВАШИХ КАНАЛОВ (С СИНОНИМАМИ!)")
+    print("🎯 ПОИСК 17 ВАШИХ КАНАЛОВ (РАСШИРЕННЫЙ ПОИСК!)")
     print("="*60)
     print(f"📅 {datetime.now().strftime('%d.%m.%Y %H:%M:%S')}")
     print("="*60 + "\n")
@@ -155,7 +155,7 @@ def build_playlist():
     seen_urls = set()
     
     for url in SOURCES:
-        print(f"📡 {url[:50]}...")
+        print(f"📡 {url[:60]}...")
         content = download_m3u(url)
         if not content:
             print("    ❌ Недоступно")
@@ -165,36 +165,29 @@ def build_playlist():
         print(f"    ✅ Найдено: {len(channels)}")
         
         for line, url in channels:
-            # Проверяем, есть ли этот канал в вашем списке
             main_name = find_channel(line)
             if not main_name:
                 continue
             
-            # Проверяем дубликаты (по URL)
             if url in seen_urls:
                 continue
             seen_urls.add(url)
             
-            # Определяем категорию
             category = get_category(main_name)
             if not category:
                 continue
             
-            # Чистим название
             name_match = re.search(r',([^,]+)$', line)
             if name_match:
                 name = name_match.group(1).strip()
                 clean = clean_name(name)
                 
-                # Добавляем постер для фильмов
                 if 'ФИЛЬМЫ' in category or 'СЕРИАЛЫ' in category:
                     poster = get_poster(clean)
                     line = line.replace('#EXTINF:', f'#EXTINF:tvg-logo="{poster}" ')
                 
-                # Заменяем название на чистое (используем главное имя)
                 line = re.sub(r',[^,]*$', f',{main_name}', line)
             
-            # Сохраняем
             if main_name not in found:
                 found[main_name] = []
             found[main_name].append((line, url, category))
@@ -203,8 +196,8 @@ def build_playlist():
     print(f"📊 НАЙДЕНО КАНАЛОВ: {len(found)} из 17")
     print("="*60)
     
-    # Показываем, что найдено
-    for name in YOUR_CHANNELS:
+    # Детальный отчет по каждому каналу
+    for name in CHANNELS_WITH_SYNONYMS.keys():
         if name in found:
             print(f"   ✅ {name}")
         else:
@@ -213,12 +206,10 @@ def build_playlist():
     return found
 
 def save_playlist(found):
-    """Сохранить плейлист"""
     if not found:
         print("\n❌ Каналы не найдены!")
         return False
     
-    # Сортируем по категориям
     grouped = {}
     for main_name, channels in found.items():
         category = get_category(main_name)
