@@ -1,12 +1,24 @@
 #EXTM3U
 # 📺 ПЛЕЙЛИСТ ДЛЯ LG TV
-# 📅 Обновлено: 28.08.2026 13:07:19
-# 📊 Всего: 9
+# 📅 Обновлено: 28.08.2026 13:12:40
+# 📊 Всего: 40
 
 # ==========================================
-#  📁 🎬 ФИЛЬМЫ (9)
+#  📁 🎬 ФИЛЬМЫ (18)
 # ==========================================
 
+#EXTINF:-1 tvg-id="AmediaHit.ru@SD",Amedia Hit
+http://stream.mcquack.net/162/index.m3u8
+#EXTINF:-1 tvg-id="A1.ru@SD" tvg-logo="https://i.imgur.com/2pAHdAi.png" group-title="Music",Amedia 1
+http://31.148.48.15/A1/index.m3u8
+#EXTINF:-1 tvg-id="A2.ru@SD" tvg-logo="https://i.imgur.com/NqHla2V.png" group-title="Series",Amedia 2
+http://31.148.48.15/A2/index.m3u8
+#EXTINF:-1 tvg-id="AmediaPremium.ru@SD" tvg-logo="https://i.imgur.com/UUjehw9.png" group-title="Movies;Series",Amedia Premium
+http://31.148.48.15/Amedia_Premium_HD/index.m3u8
+#EXTINF:-1 tvg-id="MosfilmGoldCollection.ru@SD",Mosfilm Gold Collection
+http://31.222.235.15/mosfilm/index.m3u8
+#EXTINF:-1 tvg-id="Muzhskoekino.ru@SD",Muzhskoe kino
+http://stream.mcquack.net/107/index.m3u8
 #EXTINF:-1 tvg-id="TV1000RussianKinoGlobal.ru@SD",TV1000 Russian Kino Global
 http://213.91.179.28:8000/play/a0bx
 #EXTINF:-1 tvg-id="vijuTV1000.ru@SD",viju TV1000
@@ -17,6 +29,8 @@ http://stream.mcquack.net/100/index.m3u8
 https://stream8.cinerama.uz/1225/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="vijuTV1000russkoe.ru@SD",viju TV1000 russkoe
 https://stream8.cinerama.uz/1058/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="vijuTV1000russkoe.ru@SD" tvg-logo="https://i.imgur.com/Meak2y4.png" group-title="Movies",viju TV1000 Русское
+http://31.148.48.15/TV1000_Russkoe_kino/index.m3u8
 #EXTINF:-1 tvg-id="vijuHistory.ru@SD",viju History
 http://178.124.179.122:8080/HistoryHD/index.m3u8
 #EXTINF:-1 tvg-id="vijuPlusMegahit.ru@HD",viju+ Megahit
@@ -25,4 +39,62 @@ http://stream.mcquack.net/200/index.m3u8
 http://stream.mcquack.net/202/index.m3u8
 #EXTINF:-1 tvg-id="vijuPlusSerial.ru@HD",viju+ Serial
 http://stream.mcquack.net/311/index.m3u8
+#EXTINF:-1 tvg-id="MirSeriala.ru@SD" tvg-logo="https://i.imgur.com/uzj7wVp.png" group-title="Series",Мир Сериала
+http://31.148.48.15/Mir_Seriala/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoSemya.ru@HD" tvg-logo="https://i.imgur.com/YoWOZMx.png" group-title="Movies",Сити Эдем КиноСемья
+https://v2.catcast.tv/content/38128/index.m3u8
+
+# ==========================================
+#  📁 🇷🇺 РОССИЯ (21)
+# ==========================================
+
+#EXTINF:-1 tvg-id="Russia1.ru@SD",Russia-1
+https://stream8.cinerama.uz/1020/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="Russia1.ru@HD",Russia-1
+https://stream.smotrim.ru/hls2/russia_hd/playlist_6.m3u8
+#EXTINF:-1 tvg-id="Russia1.ru@SD",Russia-1
+http://109.207.243.18/2/index.m3u8
+#EXTINF:-1 tvg-id="Russia1.ru@Plus9" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",Russia-1
+https://vgtrkregion-reg.cdnvideo.ru/vgtrk/9/russia1-hd/index.m3u8
+#EXTINF:-1 tvg-id="Russia1.ru@Plus4" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",Russia-1 +4
+https://vgtrkregion-reg.cdnvideo.ru/vgtrk/4/russia1-hd/index.m3u8
+#EXTINF:-1 tvg-id="Russia1.ru@Plus5" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",Russia-1 +5
+https://vgtrkregion-reg.cdnvideo.ru/vgtrk/5/russia1-hd/index.m3u8
+#EXTINF:-1 tvg-id="Russia1.ru@Plus6" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",Russia-1 +6
+https://vgtrkregion-reg.cdnvideo.ru/vgtrk/6/russia1-hd/index.m3u8
+#EXTINF:-1 tvg-id="Russia1.ru@Plus7" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",Russia-1 +7
+https://vgtrkregion-reg.cdnvideo.ru/vgtrk/7/russia1-hd/index.m3u8
+#EXTINF:-1 tvg-id="Russia1.ru@Plus8" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",Russia-1 +8
+https://vgtrkregion-reg.cdnvideo.ru/vgtrk/8/russia1-hd/index.m3u8
+#EXTINF:-1 tvg-id="Russia1.ru@SD" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",Россия 1
+http://vgtrkregion-reg.cdnvideo.ru/vgtrk/maykop/russia1-hd/index.m3u8
+#EXTINF:-1 tvg-id="StarCinema.ru@SD",Star Cinema
+https://dash2.antik.sk/live/test_star_cinema_atktv/playlist.m3u8
+#EXTINF:-1 tvg-id="StarFamily.ru@SD",Star Family
+https://dash2.antik.sk/live/test_star_family_atktv/playlist.m3u8
+#EXTINF:-1 tvg-id="STARTAir.ru@SD",START Air
+http://stream.mcquack.net/128/index.m3u8
+#EXTINF:-1 tvg-id="Zvezda.ru@SD",Zvezda
+http://51.158.144.33:2021/zvezda/index.m3u8
+#EXTINF:-1 tvg-id="Zvezda.ru@SD",Zvezda
+https://stream8.cinerama.uz/1050/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="Zvezda.ru@HD",Zvezda
+https://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist.m3u8
+#EXTINF:-1 tvg-id="StarTV.md@SD",Star TV
+http://forever.megogo.xyz/iptv/QGB4M3H62GC7E3/2465/index.m3u8
+#EXTINF:-1 tvg-id="TraceSportStars.fr@Russia" tvg-logo="https://i.imgur.com/FabFP5A.png" group-title="Sports",Trace Sport Stars Russia
+https://stream8.cinerama.uz/1274/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="Zvezda.ru@HD" tvg-logo="https://i.imgur.com/4PAcpfM.png" group-title="General",Zvezda
+https://tvzvezda.bonus-tv.ru/cdn/tvzvezda/playlist.m3u8
+#EXTINF:-1 tvg-id="ZvezdaPlus.ru@HD" tvg-logo="https://i.imgur.com/NNmjD9Z.png" group-title="Undefined",Zvezda Plus
+http://tvzvezda.bonus-tv.ru/cdn/zvezdaplus/playlist.m3u8
+#EXTINF:-1 tvg-id="StartTriumf.ru@SD" tvg-logo="https://i.imgur.com/L9jTieL.png" group-title="Sports",СТАРТ Триумф
+https://bl.webcaster.pro/media/playlist/free_fe8dc1b768a84b8b0333db826471f17e_hd/33_85479982/1080p/8666c3e935faf6ef47ffd601e8e48868/4821408969.m3u8
+
+# ==========================================
+#  📁 🇲🇩 МОЛДОВА (1)
+# ==========================================
+
+#EXTINF:-1 tvg-id="Seven.ru@SD" tvg-logo="https://i.imgur.com/GpCwqUF.png" group-title="Undefined",7TV
+http://31.148.48.15/7TV/index.m3u8
 
