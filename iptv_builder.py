@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-🎯 17 ВАШИХ КАНАЛОВ - РАБОЧАЯ ВЕРСИЯ!
-С ОБНОВЛЕННЫМИ ИСТОЧНИКАМИ И РАСШИРЕННЫМ ПОИСКОМ!
+🎯 17 ВАШИХ КАНАЛОВ - БЕЗ ДУБЛИКАТОВ!
+Поиск ТОЛЬКО в России и Молдове
 """
 
 import requests
@@ -20,32 +20,32 @@ CONFIG = {
 }
 
 # ============================================
-# 2. ВАШИ КАНАЛЫ С РАСШИРЕННЫМИ СИНОНИМАМИ
+# 2. ВАШИ КАНАЛЫ С СИНОНИМАМИ
 # ============================================
 
 CHANNELS_WITH_SYNONYMS = {
     # Фильмы и сериалы (12)
-    'amedia premium hd': ['amedia premium', 'amedia', 'amedia hd'],
-    'viju+ premiere': ['viju+ premiere', 'viju premiere', 'premiere'],
-    'viju+ meghit': ['viju+ meghit', 'viju meghit', 'megahit'],
-    'viju+ serial': ['viju+ serial', 'viju serial', 'serial'],
-    'viju history': ['viju history', 'viju history hd', 'history'],
+    'amedia premium hd': ['amedia premium', 'amedia'],
+    'viju+ premiere': ['viju+ premiere', 'viju premiere'],
+    'viju+ meghit': ['viju+ meghit', 'viju meghit'],
+    'viju+ serial': ['viju+ serial', 'viju serial'],
+    'viju history': ['viju history', 'viju history hd'],
     'tv1000': ['tv1000', 'tv 1000'],
-    'tv1000 русское кино': ['tv1000 русское', 'tv1000 русское кино', 'russian cinema'],
+    'tv1000 русское кино': ['tv1000 русское', 'tv1000 русское кино'],
     'tv1000 action': ['tv1000 action', 'tv1000 action hd'],
     'кинопремьера': ['кинопремьера', 'kinopremiera'],
     'киносемья': ['киносемья', 'kinosemya'],
     'мужское кино': ['мужское кино', 'muzhskoe kino'],
-    'мосфильм золотая коллекция': ['мосфильм', 'mosfilm', 'золотая коллекция'],
+    'мосфильм золотая коллекция': ['мосфильм', 'mosfilm'],
     
-    # Россия (3) - РАСШИРЕННЫЙ ПОИСК!
-    'россия 1': ['россия 1', 'russia 1', 'rtr', 'ртр', 'россия-1', 'russia-1'],
-    'звезда': ['звезда', 'zvezda', 'star', 'tv zvezda'],
-    'звезда плюс': ['звезда плюс', 'zvezda plus', 'star plus', 'zvezda+'],
+    # Россия (3)
+    'россия 1': ['россия 1', 'russia 1', 'rtr', 'ртр'],
+    'звезда': ['звезда', 'zvezda', 'star'],
+    'звезда плюс': ['звезда плюс', 'zvezda plus'],
     
-    # Молдова (2) - МАКСИМАЛЬНО РАСШИРЕННЫЙ ПОИСК!
-    'tv7': ['tv7', '7tv', 'tv 7', 'seven tv', 'tv7 moldova', '7 tv', 'canal 7', 'tvr 7'],
-    'tv9': ['tv9', '9tv', 'tv 9', 'nine tv', 'tv9 moldova', '9 tv', 'canal 9', 'tvr 9'],
+    # Молдова (2)
+    'tv7': ['tv7', '7tv', 'tv 7', 'tv7 moldova'],
+    'tv9': ['tv9', '9tv', 'tv 9', 'tv9 moldova'],
 }
 
 # ============================================
@@ -59,20 +59,21 @@ CATEGORIES = {
 }
 
 # ============================================
-# 4. ТОЛЬКО РАБОЧИЕ ИСТОЧНИКИ (БЕЗ 404!)
+# 4. ТОЛЬКО РОССИЯ И МОЛДОВА (БЕЗ ВСЕГО МИРА!)
 # ============================================
 
 SOURCES = [
-    # Основные, проверенные
+    # ТОЛЬКО РОССИЯ
     'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/ru.m3u',
-    'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/md.m3u',
     'https://iptv-org.github.io/iptv/countries/ru.m3u',
+    
+    # ТОЛЬКО МОЛДОВА
+    'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/md.m3u',
     'https://iptv-org.github.io/iptv/countries/md.m3u',
-    # Категории
+    
+    # Фильмы и сериалы (только русские)
     'https://iptv-org.github.io/iptv/categories/movies.m3u',
     'https://iptv-org.github.io/iptv/categories/series.m3u',
-    # Запасные источники
-    'https://iptv-org.github.io/iptv/playlist.m3u',
 ]
 
 # ============================================
@@ -146,13 +147,14 @@ def get_poster(title):
 
 def build_playlist():
     print("\n" + "="*60)
-    print("🎯 ПОИСК 17 ВАШИХ КАНАЛОВ (РАСШИРЕННЫЙ ПОИСК!)")
+    print("🎯 ПОИСК 17 КАНАЛОВ (ТОЛЬКО РОССИЯ + МОЛДОВА!)")
     print("="*60)
     print(f"📅 {datetime.now().strftime('%d.%m.%Y %H:%M:%S')}")
     print("="*60 + "\n")
     
     found = {}
     seen_urls = set()
+    seen_names = set()  # ← НОВОЕ: защита от дублей по названию!
     
     for url in SOURCES:
         print(f"📡 {url[:60]}...")
@@ -168,6 +170,11 @@ def build_playlist():
             main_name = find_channel(line)
             if not main_name:
                 continue
+            
+            # ← НОВОЕ: проверяем дубликаты по названию!
+            if main_name in seen_names:
+                continue
+            seen_names.add(main_name)
             
             if url in seen_urls:
                 continue
@@ -196,7 +203,6 @@ def build_playlist():
     print(f"📊 НАЙДЕНО КАНАЛОВ: {len(found)} из 17")
     print("="*60)
     
-    # Детальный отчет по каждому каналу
     for name in CHANNELS_WITH_SYNONYMS.keys():
         if name in found:
             print(f"   ✅ {name}")
@@ -221,7 +227,7 @@ def save_playlist(found):
     try:
         with open('playlist.m3u', 'w', encoding='utf-8') as f:
             f.write('#EXTM3U\n')
-            f.write(f'# 🎯 17 ВАШИХ КАНАЛОВ!\n')
+            f.write(f'# 🎯 17 ВАШИХ КАНАЛОВ (БЕЗ ДУБЛЕЙ!)\n')
             f.write(f'# 📅 Обновлено: {datetime.now().strftime("%d.%m.%Y %H:%M:%S")}\n')
             f.write(f'# 📊 Всего: {sum(len(v) for v in found.values())}\n\n')
             
