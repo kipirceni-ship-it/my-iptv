@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-📺 ПРОСТОЙ ПЛЕЙЛИСТ ДЛЯ LG TV
-Только ваши каналы!
+📺 ПЛЕЙЛИСТ ДЛЯ LG TV - С РАСШИРЕННЫМ ПОИСКОМ!
 """
 
 import requests
@@ -11,49 +10,69 @@ import re
 from datetime import datetime
 
 # ============================================
-# 1. ВАШИ КАНАЛЫ
+# 1. ВАШИ КАНАЛЫ + СИНОНИМЫ (ДЛЯ ПОИСКА!)
 # ============================================
 
-YOUR_CHANNELS = [
-    # Фильмы
-    'Amedia Premium HD',
-    'viju+ Premiere',
-    'viju+ Megahit',
-    'viju+ Serial',
-    'viju History',
-    'TV1000',
-    'TV1000 Русское кино',
-    'TV1000 Action',
-    'Кинопремьера',
-    'Киносемья',
-    'Мужское кино',
-    'Мосфильм. Золотая коллекция',
-    # Россия
-    'Россия 1',
-    'Звезда',
-    'Звезда Плюс',
-    # Молдова (ТОЛЬКО ТВ7 и ТВ9)
-    'TV7',
-    'TV9',
-]
-
-# ============================================
-# 2. КАТЕГОРИИ (ДЛЯ УДОБСТВА)
-# ============================================
-
-CATEGORIES = {
-    '🎬 ФИЛЬМЫ': YOUR_CHANNELS[:12],
-    '🇷🇺 РОССИЯ': YOUR_CHANNELS[12:15],
-    '🇲🇩 МОЛДОВА': YOUR_CHANNELS[15:17],
+CHANNELS = {
+    # ===== ФИЛЬМЫ =====
+    'Amedia Premium HD': ['amedia premium', 'amedia', 'amedia hd'],
+    'viju+ Premiere': ['viju+ premiere', 'viju premiere', 'premiere'],
+    'viju+ Megahit': ['viju+ meghit', 'viju meghit', 'megahit'],
+    'viju+ Serial': ['viju+ serial', 'viju serial', 'serial'],
+    'viju History': ['viju history', 'viju history hd', 'history'],
+    'TV1000': ['tv1000', 'tv 1000'],
+    'TV1000 Русское кино': ['tv1000 русское', 'tv1000 русское кино', 'russian cinema'],
+    'TV1000 Action': ['tv1000 action', 'tv1000 action hd'],
+    'Кинопремьера': ['кинопремьера', 'kinopremiera'],
+    'Киносемья': ['киносемья', 'kinosemya'],
+    'Мужское кино': ['мужское кино', 'muzhskoe kino'],
+    'Мосфильм. Золотая коллекция': ['мосфильм', 'mosfilm', 'золотая коллекция'],
+    
+    # ===== РОССИЯ (ВСЕ ВАРИАНТЫ!) =====
+    'Россия 1': [
+        'россия 1', 'россия-1', 'russia 1', 'russia-1',
+        'ртр', 'rtr', 'rtr planeta', 'россия ртр'
+    ],
+    'Звезда': [
+        'звезда', 'zvezda', 'tv zvezda', 'звезда hd',
+        'star tv', 'star'
+    ],
+    'Звезда Плюс': [
+        'звезда плюс', 'zvezda plus', 'звезда+', 'star plus'
+    ],
+    
+    # ===== МОЛДОВА (ВСЕ ВАРИАНТЫ!) =====
+    'TV7': [
+        'tv7', '7tv', 'tv 7', '7 tv',
+        'tv7 moldova', '7tv moldova',
+        'canal 7', 'canal7', 'tvr 7'
+    ],
+    'TV9': [
+        'tv9', '9tv', 'tv 9', '9 tv',
+        'tv9 moldova', '9tv moldova',
+        'canal 9', 'canal9', 'tvr 9'
+    ],
 }
 
 # ============================================
-# 3. ТОЛЬКО РОССИЯ И МОЛДОВА (БЕЗ РУМЫН, УКРАИНЫ, MOLDOVA 1)
+# 2. КАТЕГОРИИ
+# ============================================
+
+CATEGORIES = {
+    '🎬 ФИЛЬМЫ': list(CHANNELS.keys())[:12],
+    '🇷🇺 РОССИЯ': list(CHANNELS.keys())[12:15],
+    '🇲🇩 МОЛДОВА': list(CHANNELS.keys())[15:17],
+}
+
+# ============================================
+# 3. ИСТОЧНИКИ
 # ============================================
 
 SOURCES = [
     'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/ru.m3u',
     'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/md.m3u',
+    'https://iptv-org.github.io/iptv/countries/ru.m3u',
+    'https://iptv-org.github.io/iptv/countries/md.m3u',
 ]
 
 # ============================================
@@ -87,12 +106,13 @@ def parse_m3u(content):
     return channels
 
 def find_channel(line):
-    """Поиск канала по точному совпадению"""
+    """Поиск по всем синонимам"""
     line_lower = line.lower()
     
-    for channel in YOUR_CHANNELS:
-        if channel.lower() in line_lower:
-            return channel
+    for channel_name, synonyms in CHANNELS.items():
+        for synonym in synonyms:
+            if synonym.lower() in line_lower:
+                return channel_name
     
     return None
 
@@ -103,7 +123,6 @@ def get_category(channel_name):
     return None
 
 def clean_name(line):
-    """Очистить название"""
     line = re.sub(r'\([^)]*\)', '', line)
     line = re.sub(r'\[[^\]]*\]', '', line)
     line = re.sub(r'HD|SD|FULL|4K|1080|720', '', line, flags=re.IGNORECASE)
@@ -112,7 +131,7 @@ def clean_name(line):
 
 def build_playlist():
     print("\n" + "="*60)
-    print("📺 СБОРКА ПЛЕЙЛИСТА ДЛЯ LG TV")
+    print("📺 ПОИСК КАНАЛОВ (С РАСШИРЕННЫМИ СИНОНИМАМИ!)")
     print("="*60)
     print(f"📅 {datetime.now().strftime('%d.%m.%Y %H:%M:%S')}")
     print("="*60 + "\n")
@@ -135,7 +154,7 @@ def build_playlist():
             if not channel_name:
                 continue
             
-            # Пропускаем Moldova 1 (она не в списке)
+            # Исключаем Moldova 1
             if 'moldova 1' in line.lower():
                 continue
             
@@ -158,10 +177,10 @@ def build_playlist():
             found[channel_name].append((line, url, category))
     
     print("\n" + "="*60)
-    print(f"📊 НАЙДЕНО: {len(found)} из {len(YOUR_CHANNELS)}")
+    print(f"📊 НАЙДЕНО: {len(found)} из {len(CHANNELS)}")
     print("="*60)
     
-    for channel in YOUR_CHANNELS:
+    for channel in CHANNELS.keys():
         if channel in found:
             print(f"   ✅ {channel}")
         else:
@@ -213,7 +232,7 @@ def main():
     found = build_playlist()
     if found:
         save_playlist(found)
-        print("\n📎 ССЫЛКА ДЛЯ SS IPTV / MIKA PLAYER:")
+        print("\n📎 ССЫЛКА ДЛЯ ПЛЕЕРА:")
         print("https://raw.githubusercontent.com/kipirceni-ship-it/my-iptv/main/playlist.m3u")
         print("\n🔄 Обновляется каждые 6 часов")
     else:
