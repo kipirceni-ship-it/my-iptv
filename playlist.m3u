@@ -1,44 +1,28 @@
 #EXTM3U
-# 🎯 17 ВАШИХ КАНАЛОВ (БЕЗ ДУБЛЕЙ!)
-# 📅 Обновлено: 28.08.2026 12:16:58
-# 📊 Всего: 12
+# 🎯 ПРОСТОЙ ПЛЕЙЛИСТ
+# 📅 Обновлено: 28.08.2026 13:00:53
+# 📊 Всего: 9
 
 # ==========================================
-#  📁 🎬 ФИЛЬМЫ И СЕРИАЛЫ (8)
+#  📁 🎬 ФИЛЬМЫ (9)
 # ==========================================
 
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#e74c3c'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>Amedia%20Hit</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="AmediaHit.ru@SD",amedia premium hd
-http://stream.mcquack.net/162/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#2ecc71'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>Mosfilm%20Gold%20Collect…</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="MosfilmGoldCollection.ru@SD",мосфильм золотая коллекция
-http://31.222.235.15/mosfilm/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#3498db'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>Muzhskoe%20kino</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="Muzhskoekino.ru@SD",мужское кино
-http://stream.mcquack.net/107/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#2ecc71'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>TV1000%20Russian%20Kino%20…</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="TV1000RussianKinoGlobal.ru@SD",tv1000
+#EXTINF:-1 tvg-id="TV1000RussianKinoGlobal.ru@SD",TV1000 Russian Kino Global
 http://213.91.179.28:8000/play/a0bx
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#f39c12'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>viju%20History</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="vijuHistory.ru@SD",viju history
+#EXTINF:-1 tvg-id="vijuTV1000.ru@SD",viju TV1000
+http://stream.mcquack.net/110/index.m3u8
+#EXTINF:-1 tvg-id="vijuTV1000action.ru@SD",viju TV1000 action
+http://stream.mcquack.net/100/index.m3u8
+#EXTINF:-1 tvg-id="vijuTV1000action.ru@SD",viju TV1000 action
+https://stream8.cinerama.uz/1225/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="vijuTV1000russkoe.ru@SD",viju TV1000 russkoe
+https://stream8.cinerama.uz/1058/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="vijuHistory.ru@SD",viju History
 http://178.124.179.122:8080/HistoryHD/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#3498db'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>viju+%20Premiere</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="vijuPlusPremiere.ru@HD",viju+ premiere
+#EXTINF:-1 tvg-id="vijuPlusMegahit.ru@HD",viju+ Megahit
+http://stream.mcquack.net/200/index.m3u8
+#EXTINF:-1 tvg-id="vijuPlusPremiere.ru@HD",viju+ Premiere
 http://stream.mcquack.net/202/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#9b59b6'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>viju+%20Serial</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="vijuPlusSerial.ru@HD",viju+ serial
+#EXTINF:-1 tvg-id="vijuPlusSerial.ru@HD",viju+ Serial
 http://stream.mcquack.net/311/index.m3u8
-#EXTINF:tvg-logo="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='280'>%20%20%20%20%20%20%20%20<rect%20width='200'%20height='280'%20fill='#e74c3c'%20rx='8'/>%20%20%20%20%20%20%20%20<text%20x='100'%20y='150'%20font-family='Arial'%20font-size='18'%20fill='white'%20text-anchor='middle'%20font-weight='bold'>Сити%20Эдем%20КиноСемья</text>%20%20%20%20%20%20%20%20<text%20x='100'%20y='245'%20font-family='Arial'%20font-size='12'%20fill='rgba(255,255,255,0.7)'%20text-anchor='middle'>▶%20Нажми%20для%20просмотра</text>%20%20%20%20</svg>" -1 tvg-id="CityEdenKinoSemya.ru@HD" tvg-logo="https://i.imgur.com/YoWOZMx.png" group-title="Movies",киносемья
-https://v2.catcast.tv/content/38128/index.m3u8
-
-# ==========================================
-#  📁 🇷🇺 РОССИЯ (2)
-# ==========================================
-
-#EXTINF:-1 tvg-id="StarCinema.ru@SD",звезда
-https://dash2.antik.sk/live/test_star_cinema_atktv/playlist.m3u8
-#EXTINF:-1 tvg-id="Russia1.ru@SD" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",россия 1
-http://vgtrkregion-reg.cdnvideo.ru/vgtrk/maykop/russia1-hd/index.m3u8
-
-# ==========================================
-#  📁 🇲🇩 МОЛДОВА (2)
-# ==========================================
-
-#EXTINF:-1 tvg-id="Seven.ru@SD" tvg-logo="https://i.imgur.com/GpCwqUF.png" group-title="Undefined",tv7
-http://31.148.48.15/7TV/index.m3u8
-#EXTINF:-1 tvg-id="PlutoTV90sClassics.de@FR" tvg-logo="https://images.pluto.tv/channels/66b4990746762a00084c2f78/colorLogoPNG.png" group-title="Movies;Series",tv9
-https://jmp2.uk/plu-66b4990746762a00084c2f78.m3u8
 
