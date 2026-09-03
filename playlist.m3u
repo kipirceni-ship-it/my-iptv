@@ -1,14 +1,16 @@
 #EXTM3U
 # 📺 ПЛЕЙЛИСТ ДЛЯ LG TV
-# 📅 Обновлено: 02.09.2026 20:24:29
-# 📊 Всего: 40
+# 📅 Обновлено: 03.09.2026 02:33:03
+# 📊 Всего: 43
 
 # ==========================================
-#  📁 🎬 ФИЛЬМЫ (18)
+#  📁 🎬 ФИЛЬМЫ (19)
 # ==========================================
 
 #EXTINF:-1 tvg-id="AmediaHit.ru@SD",Amedia Hit
 http://stream.mcquack.net/162/index.m3u8
+#EXTINF:-1 tvg-id="AmediaHit.ru@SD",Amedia Hit
+http://flussonic.linkintel.ru/amedia-hit/index.m3u8
 #EXTINF:-1 tvg-id="A1.ru@SD" tvg-logo="https://i.imgur.com/2pAHdAi.png" group-title="Music",Amedia 1
 http://31.148.48.15/A1/index.m3u8
 #EXTINF:-1 tvg-id="A2.ru@SD" tvg-logo="https://i.imgur.com/NqHla2V.png" group-title="Series",Amedia 2
@@ -39,13 +41,13 @@ http://stream.mcquack.net/200/index.m3u8
 http://stream.mcquack.net/202/index.m3u8
 #EXTINF:-1 tvg-id="vijuPlusSerial.ru@HD",viju+ Serial
 http://stream.mcquack.net/311/index.m3u8
-#EXTINF:-1 tvg-id="MirSeriala.ru@SD" tvg-logo="https://i.imgur.com/uzj7wVp.png" group-title="Series",Мир Сериала
-http://31.148.48.15/Mir_Seriala/index.m3u8
+#EXTINF:-1 tvg-id="MirSeriala.ru@SD",Mir Seriala
+http://45.145.32.13:20440/ctc_kids_hd/index.m3u8?token=test
 #EXTINF:-1 tvg-id="CityEdenKinoSemya.ru@HD" tvg-logo="https://i.imgur.com/YoWOZMx.png" group-title="Movies",Сити Эдем КиноСемья
 https://v2.catcast.tv/content/38128/index.m3u8
 
 # ==========================================
-#  📁 🇷🇺 РОССИЯ (21)
+#  📁 🇷🇺 РОССИЯ (23)
 # ==========================================
 
 #EXTINF:-1 tvg-id="Russia1.ru@SD",Russia-1
@@ -80,6 +82,10 @@ http://51.158.144.33:2021/zvezda/index.m3u8
 https://stream8.cinerama.uz/1050/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="Zvezda.ru@HD",Zvezda
 https://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist.m3u8
+#EXTINF:-1 tvg-id="ZvezdaPlus.ru@SD",Zvezda Plus
+http://45.145.32.13:20440/zvezdaplus/index.m3u8?token=test
+#EXTINF:-1 tvg-id="Zvezda.ru@SD",Zvezda
+http://flussonic.linkintel.ru/zvezda/index.m3u8
 #EXTINF:-1 tvg-id="StarTV.md@SD",Star TV
 http://forever.megogo.xyz/iptv/QGB4M3H62GC7E3/2465/index.m3u8
 #EXTINF:-1 tvg-id="TraceSportStars.fr@Russia" tvg-logo="https://i.imgur.com/FabFP5A.png" group-title="Sports",Trace Sport Stars Russia
