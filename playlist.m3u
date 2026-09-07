@@ -1,10 +1,10 @@
 #EXTM3U
 # 📺 ПЛЕЙЛИСТ ДЛЯ LG TV
-# 📅 Обновлено: 06.09.2026 19:52:29
-# 📊 Всего: 45
+# 📅 Обновлено: 07.09.2026 02:24:15
+# 📊 Всего: 48
 
 # ==========================================
-#  📁 🎬 ФИЛЬМЫ (19)
+#  📁 🎬 ФИЛЬМЫ (22)
 # ==========================================
 
 #EXTINF:-1 tvg-id="AmediaHit.ru@SD",Amedia Hit
@@ -43,6 +43,12 @@ http://stream.mcquack.net/202/index.m3u8
 http://stream.mcquack.net/311/index.m3u8
 #EXTINF:-1 tvg-id="MirSeriala.ru@SD",Mir Seriala
 http://45.145.32.13:20440/ctc_kids_hd/index.m3u8?token=test
+#EXTINF:-1 tvg-id="VelvetMentovskiyeSerialy.ru@HD",Velvet. Mentovskiye Serialy
+https://cdn.rostelekom-tv.xyz/live/tWQ0ge9rspBQhRst.m3u8
+#EXTINF:-1 tvg-id="VelvetSeriesHits.ru@HD" tvg-logo="https://antiabuse-container.b-cdn.net/serialyhity.png" group-title="Comedy;Family;Series",Velvet. Series Hits
+https://cdn.rostelekom-tv.xyz/live/DeWr3Sgw1Aj2lJd0.m3u8
+#EXTINF:-1 tvg-id="VelvetWorldSeries.ru@HD" tvg-logo="https://antiabuse-container.b-cdn.net/mirseriallogo.png" group-title="Comedy;Family;Series",Velvet. World Series
+https://cdn.rostelekom-tv.xyz/live/2RR44py-yGlIWQIp.m3u8
 #EXTINF:-1 tvg-id="CityEdenKinoSemya.ru@HD" tvg-logo="https://i.imgur.com/YoWOZMx.png" group-title="Movies",Сити Эдем КиноСемья
 https://v2.catcast.tv/content/38128/index.m3u8
 
