@@ -1,7 +1,7 @@
 #EXTM3U
 # 📺 ПЛЕЙЛИСТ ДЛЯ LG TV
-# 📅 Обновлено: 05.10.2026 23:35:52
-# 📊 Всего: 50
+# 📅 Обновлено: 06.10.2026 04:23:27
+# 📊 Всего: 49
 
 # ==========================================
 #  📁 🎬 ФИЛЬМЫ (21)
@@ -51,7 +51,7 @@ https://cdn.rostelekom-tv.xyz/live/2RR44py-yGlIWQIp.m3u8
 https://v2.catcast.tv/content/38128/index.m3u8
 
 # ==========================================
-#  📁 🇷🇺 РОССИЯ (29)
+#  📁 🇷🇺 РОССИЯ (28)
 # ==========================================
 
 #EXTINF:-1 tvg-id="Russia1.ru@SD",Russia-1
@@ -104,8 +104,6 @@ http://str2.iptvhd.ru:8080/Zvezda/index.m3u8
 http://str2.iptvhd.ru:8080/START_Air_HD/index.m3u8
 #EXTINF:-1 tvg-id="STARTWorld.ru@HD",START World
 http://str2.iptvhd.ru:8080/START_World_HD/index.m3u8
-#EXTINF:-1 tvg-id="StarTV.md@SD",Star TV
-http://forever.megogo.xyz/iptv/QGB4M3H62GC7E3/2465/index.m3u8
 #EXTINF:-1 tvg-id="StartTriumf.ru@SD" tvg-logo="https://i.imgur.com/L9jTieL.png" group-title="Sports",Start Triumf
 https://bl.webcaster.pro/media/playlist/free_fe8dc1b768a84b8b0333db826471f17e_hd/33_85479982/1080p/8666c3e935faf6ef47ffd601e8e48868/4821408969.m3u8
 #EXTINF:-1 tvg-id="TraceSportStars.fr@Russia" tvg-logo="https://i.imgur.com/FabFP5A.png" group-title="Sports",Trace Sport Stars Russia
