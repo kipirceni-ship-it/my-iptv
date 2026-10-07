@@ -1,10 +1,10 @@
 #EXTM3U
 # 📺 ПЛЕЙЛИСТ ДЛЯ LG TV
-# 📅 Обновлено: 06.10.2026 22:09:58
-# 📊 Всего: 49
+# 📅 Обновлено: 07.10.2026 03:49:25
+# 📊 Всего: 51
 
 # ==========================================
-#  📁 🎬 ФИЛЬМЫ (21)
+#  📁 🎬 ФИЛЬМЫ (23)
 # ==========================================
 
 #EXTINF:-1 tvg-id="AmediaHit.ru@SD",Amedia Hit
@@ -29,6 +29,10 @@ https://stream8.cinerama.uz/1225/tracks-v1a1/mono.m3u8
 https://stream8.cinerama.uz/1058/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="vijuTV1000russkoe.ru@SD",viju TV1000 russkoe
 https://fs.uplink.kz/viju_tv1000_russkoe/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="vijuTV1000novella.ru@HD",viju TV1000 novella
+http://46.53.200.153:7777/play/VIJU_TV_1000_novella/index.m3u8
+#EXTINF:-1 tvg-id="vijuTV1000romantica.ru@HD",viju TV1000 romantica
+http://46.53.200.153:7777/play/Viju_Drama/index.m3u8
 #EXTINF:-1 tvg-id="vijuHistory.ru@SD",viju History
 http://178.124.179.122:8080/HistoryHD/index.m3u8
 #EXTINF:-1 tvg-id="History2.ru@SD",History 2
