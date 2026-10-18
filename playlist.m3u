@@ -1,7 +1,7 @@
 #EXTM3U
 # 📺 ПЛЕЙЛИСТ ДЛЯ LG TV
-# 📅 Обновлено: 17.10.2026 19:57:45
-# 📊 Всего: 48
+# 📅 Обновлено: 18.10.2026 02:37:47
+# 📊 Всего: 47
 
 # ==========================================
 #  📁 🎬 ФИЛЬМЫ (22)
@@ -53,7 +53,7 @@ https://cdn.rostelekom-tv.xyz/live/2RR44py-yGlIWQIp.m3u8
 https://v2.catcast.tv/content/38128/index.m3u8
 
 # ==========================================
-#  📁 🇷🇺 РОССИЯ (26)
+#  📁 🇷🇺 РОССИЯ (25)
 # ==========================================
 
 #EXTINF:-1 tvg-id="Russia1.ru@SD",Russia-1
@@ -62,8 +62,6 @@ https://stream8.cinerama.uz/1020/tracks-v1a1/mono.m3u8
 https://stream.smotrim.ru/hls2/russia_hd/playlist_6.m3u8
 #EXTINF:-1 tvg-id="Russia1.ru@SD",Russia-1
 http://109.207.243.18/2/index.m3u8
-#EXTINF:-1 tvg-id="RTRPlaneta.ru@CIS",RTR-Planeta
-https://fs.uplink.kz/rtr_planeta/mono.m3u8?token=onlinetv
 #EXTINF:-1 tvg-id="Russia1.ru@SD",Russia-1
 http://31.148.5.241/kanal_2/index.m3u8
 #EXTINF:-1 tvg-id="Russia1.ru@SD" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",Russia-1
