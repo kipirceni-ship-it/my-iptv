@@ -1,10 +1,10 @@
 #EXTM3U
 # 📺 ПЛЕЙЛИСТ ДЛЯ LG TV
-# 📅 Обновлено: 04.11.2026 23:05:39
-# 📊 Всего: 46
+# 📅 Обновлено: 05.11.2026 04:43:46
+# 📊 Всего: 54
 
 # ==========================================
-#  📁 🎬 ФИЛЬМЫ (22)
+#  📁 🎬 ФИЛЬМЫ (29)
 # ==========================================
 
 #EXTINF:-1 tvg-id="AmediaHit.ru@SD",Amedia Hit
@@ -13,6 +13,18 @@ http://stream.mcquack.net/162/index.m3u8
 http://flussonic.linkintel.ru/amedia-hit/index.m3u8
 #EXTINF:-1 tvg-id="AmediaPremium.ru@SD" tvg-logo="https://i.imgur.com/UUjehw9.png" group-title="Movies;Series",Amedia Premium
 http://31.148.48.15/Amedia_Premium_HD/index.m3u8
+#EXTINF:-1 tvg-id="MirSeriala.ru@SD",Mir Seriala
+http://176.118.197.101/MirSeriala/index.m3u8
+#EXTINF:-1 tvg-id="VelvetMentovskiyeSerialy.ru@HD",Velvet. Mentovskiye Serialy
+https://cdn.rostelekom-tv.xyz/live/tWQ0ge9rspBQhRst.m3u8
+#EXTINF:-1 tvg-id="vijuPlusSerial.ru@HD",viju+ Serial
+http://46.53.200.153:7777/play/Viju_Serial_HD/index.m3u8
+#EXTINF:-1 tvg-id="VelvetSeriesHits.ru@HD" tvg-logo="https://antiabuse-container.b-cdn.net/serialyhity.png" group-title="Comedy;Family;Series",Velvet. Series Hits
+https://cdn.rostelekom-tv.xyz/live/DeWr3Sgw1Aj2lJd0.m3u8
+#EXTINF:-1 tvg-id="VelvetWorldSeries.ru@HD" tvg-logo="https://antiabuse-container.b-cdn.net/mirseriallogo.png" group-title="Comedy;Family;Series",Velvet. World Series
+https://cdn.rostelekom-tv.xyz/live/2RR44py-yGlIWQIp.m3u8
+#EXTINF:-1 tvg-id="vijuPlusSerial.ru@HD" tvg-logo="https://i.imgur.com/8yXZET5.png" group-title="Series",viju+ Serial
+http://stream.mcquack.net/311/index.m3u8
 #EXTINF:-1 tvg-id="MosfilmGoldCollection.ru@SD",Mosfilm Gold Collection
 http://31.222.235.15/mosfilm/index.m3u8
 #EXTINF:-1 tvg-id="Muzhskoekino.ru@SD",Muzhskoe kino
@@ -20,50 +32,52 @@ http://stream.mcquack.net/107/index.m3u8
 #EXTINF:-1 tvg-id="TV1000RussianKinoGlobal.ru@SD",TV1000 Russian Kino Global
 http://213.91.179.28:8000/play/a0bx
 #EXTINF:-1 tvg-id="vijuTV1000.ru@SD",viju TV1000
-http://stream.mcquack.net/110/index.m3u8
+http://46.53.200.153:7777/play/TV_1000/index.m3u8
 #EXTINF:-1 tvg-id="vijuTV1000action.ru@SD",viju TV1000 action
-http://stream.mcquack.net/100/index.m3u8
+http://46.53.200.153:7777/play/a01h/index.m3u8
 #EXTINF:-1 tvg-id="vijuTV1000action.ru@SD",viju TV1000 action
 https://stream8.cinerama.uz/1225/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="vijuTV1000russkoe.ru@SD",viju TV1000 russkoe
-https://stream8.cinerama.uz/1058/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="vijuTV1000russkoe.ru@SD",viju TV1000 russkoe
-https://fs.uplink.kz/viju_tv1000_russkoe/mono.m3u8?token=onlinetv
 #EXTINF:-1 tvg-id="vijuTV1000novella.ru@HD",viju TV1000 novella
 http://46.53.200.153:7777/play/VIJU_TV_1000_novella/index.m3u8
 #EXTINF:-1 tvg-id="vijuTV1000romantica.ru@HD",viju TV1000 romantica
 http://46.53.200.153:7777/play/Viju_Drama/index.m3u8
+#EXTINF:-1 tvg-id="vijuTV1000russkoe.ru@SD",viju TV1000 russkoe
+http://46.53.200.153:7777/play/a01g/index.m3u8
+#EXTINF:-1 tvg-id="vijuTV1000russkoe.ru@SD",viju TV1000 russkoe
+https://stream8.cinerama.uz/1058/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="vijuTV1000.ru@SD" tvg-logo="https://i.imgur.com/ZMsyjSr.png" group-title="Movies",viju TV1000
+http://stream.mcquack.net/110/index.m3u8
+#EXTINF:-1 tvg-id="vijuTV1000action.ru@SD" tvg-logo="https://i.imgur.com/TMmyuzh.png" group-title="Movies",viju TV1000 action
+http://stream.mcquack.net/100/index.m3u8
+#EXTINF:-1 tvg-id="vijuTV1000russkoe.ru@SD" tvg-logo="https://i.imgur.com/Meak2y4.png" group-title="Movies",viju TV1000 russkoe
+https://fs.uplink.kz/viju_tv1000_russkoe/mono.m3u8?token=onlinetv
 #EXTINF:-1 tvg-id="vijuHistory.ru@SD",viju History
+http://46.53.200.153:7777/play/a01j/index.m3u8
+#EXTINF:-1 tvg-id="vijuHistory.ru@SD" tvg-logo="https://i.imgur.com/FqWkeXb.png" group-title="Documentary",viju History
 http://178.124.179.122:8080/HistoryHD/index.m3u8
 #EXTINF:-1 tvg-id="vijuPlusMegahit.ru@HD",viju+ Megahit
+http://46.53.200.153:7777/play/Viju_Megahit_HD/index.m3u8
+#EXTINF:-1 tvg-id="vijuPlusMegahit.ru@HD" tvg-logo="https://i.imgur.com/oIQNddV.png" group-title="Movies",viju+ Megahit
 http://stream.mcquack.net/200/index.m3u8
 #EXTINF:-1 tvg-id="vijuPlusPremiere.ru@HD",viju+ Premiere
+http://46.53.200.153:7777/play/Viju_Premiere/index.m3u8
+#EXTINF:-1 tvg-id="vijuPlusPremiere.ru@HD" tvg-logo="https://i.imgur.com/klRvhR5.png" group-title="Movies",viju+ Premiere
 http://stream.mcquack.net/202/index.m3u8
-#EXTINF:-1 tvg-id="vijuPlusSerial.ru@HD",viju+ Serial
-http://stream.mcquack.net/311/index.m3u8
-#EXTINF:-1 tvg-id="VelvetMentovskiyeSerialy.ru@HD",Velvet. Mentovskiye Serialy
-https://cdn.rostelekom-tv.xyz/live/tWQ0ge9rspBQhRst.m3u8
-#EXTINF:-1 tvg-id="MirSeriala.ru@SD",Mir Seriala
-http://176.118.197.101/MirSeriala/index.m3u8
-#EXTINF:-1 tvg-id="VelvetSeriesHits.ru@HD" tvg-logo="https://antiabuse-container.b-cdn.net/serialyhity.png" group-title="Comedy;Family;Series",Velvet. Series Hits
-https://cdn.rostelekom-tv.xyz/live/DeWr3Sgw1Aj2lJd0.m3u8
-#EXTINF:-1 tvg-id="VelvetWorldSeries.ru@HD" tvg-logo="https://antiabuse-container.b-cdn.net/mirseriallogo.png" group-title="Comedy;Family;Series",Velvet. World Series
-https://cdn.rostelekom-tv.xyz/live/2RR44py-yGlIWQIp.m3u8
 #EXTINF:-1 tvg-id="CityEdenKinoSemya.ru@HD" tvg-logo="https://i.imgur.com/YoWOZMx.png" group-title="Movies",City Eden KinoSemya
 https://v2.catcast.tv/content/38128/index.m3u8
 
 # ==========================================
-#  📁 🇷🇺 РОССИЯ (24)
+#  📁 🇷🇺 РОССИЯ (25)
 # ==========================================
 
 #EXTINF:-1 tvg-id="Russia1.ru@SD",Russia-1
+http://31.148.5.241/kanal_2/index.m3u8
+#EXTINF:-1 tvg-id="Russia1.ru@SD",Russia-1
 https://stream8.cinerama.uz/1020/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="Russia1.ru@HD",Russia-1
-https://stream.smotrim.ru/hls2/russia_hd/playlist_6.m3u8
+http://176.118.197.101/RossiyaHD/index.m3u8
 #EXTINF:-1 tvg-id="Russia1.ru@SD",Russia-1
 http://109.207.243.18/2/index.m3u8
-#EXTINF:-1 tvg-id="Russia1.ru@SD",Russia-1
-http://31.148.5.241/kanal_2/index.m3u8
 #EXTINF:-1 tvg-id="Russia1.ru@SD" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",Russia-1
 http://vgtrkregion-reg.cdnvideo.ru/vgtrk/maykop/russia1-hd/index.m3u8
 #EXTINF:-1 tvg-id="Russia1.ru@Plus4" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",Russia-1 +4
@@ -78,24 +92,26 @@ https://vgtrkregion-reg.cdnvideo.ru/vgtrk/7/russia1-hd/index.m3u8
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/8/russia1-hd/index.m3u8
 #EXTINF:-1 tvg-id="Russia1.ru@Plus9" tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="General",Russia-1 +9
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/9/russia1-hd/index.m3u8
+#EXTINF:-1 tvg-id="Russia1.ru@HD" tvg-logo="https://uut-telecom.ru/wp-content/uploads/2021/12/rossiya-1-hd.png" group-title="General",Russia-1
+https://stream.smotrim.ru/hls2/russia_hd/playlist_6.m3u8
 #EXTINF:-1 tvg-id="StarCinema.ru@SD",Star Cinema
 https://dash2.antik.sk/live/test_star_cinema_atktv/playlist.m3u8
 #EXTINF:-1 tvg-id="StarFamily.ru@SD",Star Family
 https://dash2.antik.sk/live/test_star_family_atktv/playlist.m3u8
 #EXTINF:-1 tvg-id="STARTAir.ru@SD",START Air
+http://176.118.197.101/START_AIR/index.m3u8
+#EXTINF:-1 tvg-id="STARTAir.ru@SD",START Air
 http://stream.mcquack.net/128/index.m3u8
+#EXTINF:-1 tvg-id="STARTWorld.ru@SD",START World
+https://fs.uplink.kz/start_world/mono.m3u8?token=onlinetv
 #EXTINF:-1 tvg-id="Zvezda.ru@SD",Zvezda
 http://51.158.144.33:2021/zvezda/index.m3u8
+#EXTINF:-1 tvg-id="Zvezda.ru@SD",Zvezda
+http://31.148.5.241/kanal_17/index.m3u8
 #EXTINF:-1 tvg-id="Zvezda.ru@SD",Zvezda
 https://stream8.cinerama.uz/1050/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="Zvezda.ru@HD",Zvezda
 https://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist.m3u8
-#EXTINF:-1 tvg-id="Zvezda.ru@SD",Zvezda
-http://flussonic.linkintel.ru/zvezda/index.m3u8
-#EXTINF:-1 tvg-id="STARTWorld.ru@SD",START World
-https://fs.uplink.kz/start_world/mono.m3u8?token=onlinetv
-#EXTINF:-1 tvg-id="STARTAir.ru@SD",START Air
-http://176.118.197.101/START_AIR/index.m3u8
 #EXTINF:-1 tvg-id="StartTriumf.ru@SD" tvg-logo="https://i.imgur.com/L9jTieL.png" group-title="Sports",Start Triumf
 https://bl.webcaster.pro/media/playlist/free_fe8dc1b768a84b8b0333db826471f17e_hd/33_85479982/1080p/8666c3e935faf6ef47ffd601e8e48868/4821408969.m3u8
 #EXTINF:-1 tvg-id="TraceSportStars.fr@Russia" tvg-logo="https://i.imgur.com/FabFP5A.png" group-title="Sports",Trace Sport Stars Russia
